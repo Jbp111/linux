@@ -346,6 +346,40 @@ void page_table_free(struct mm_struct *mm, unsigned long *table)
 	__free_page(page);
 }
 
+#ifdef CONFIG_TRANSPARENT_HUGEPAGE
+static void pte_free_now(struct rcu_head *head)
+{
+	struct page *page;
+	unsigned long mm_bit;
+	struct mm_struct *mm;
+	unsigned long *table;
+
+	page = container_of(head, struct page, rcu_head);
+	table = (unsigned long *)page_to_virt(page);
+	mm_bit = (unsigned long)page->pt_mm;
+	/* 4K page has only two 2K fragments, but alignment allows eight */
+	mm = (struct mm_struct *)(mm_bit & ~7);
+	table += PTRS_PER_PTE * (mm_bit & 7);
+	page_table_free(mm, table);
+	mmdrop_async(mm);
+}
+
+void pte_free_defer(struct mm_struct *mm, pgtable_t pgtable)
+{
+	struct page *page;
+	unsigned long mm_bit;
+
+	mmgrab(mm);
+	page = virt_to_page(pgtable);
+	/* Which 2K page table fragment of a 4K page? */
+	mm_bit = ((unsigned long)pgtable & ~PAGE_MASK) /
+			(PTRS_PER_PTE * sizeof(pte_t));
+	mm_bit += (unsigned long)mm;
+	page->pt_mm = (struct mm_struct *)mm_bit;
+	call_rcu(&page->rcu_head, pte_free_now);
+}
+#endif /* CONFIG_TRANSPARENT_HUGEPAGE */
+
 void page_table_free_rcu(struct mmu_gather *tlb, unsigned long *table,
 			 unsigned long vmaddr)
 {

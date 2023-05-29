@@ -41,6 +41,7 @@ static inline void smp_mb__after_mmgrab(void)
 	smp_mb__after_atomic();
 }
 
+extern void mmdrop_async(struct mm_struct *mm);
 extern void __mmdrop(struct mm_struct *mm);
 
 static inline void mmdrop(struct mm_struct *mm)
