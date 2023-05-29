@@ -232,12 +232,32 @@ pmd_t pmdp_collapse_flush(struct vm_area_struct *vma, unsigned long address,
 #endif
 #endif /* CONFIG_TRANSPARENT_HUGEPAGE */
 
+#if defined(CONFIG_GUP_GET_PXX_LOW_HIGH) && \
+	(defined(CONFIG_SMP) || defined(CONFIG_PREEMPT_RCU))
+/*
+ * See the comment above ptep_get_lockless() in include/linux/pgtable.h:
+ * the barriers in pmdp_get_lockless() cannot guarantee that the value in
+ * pmd_high actually belongs with the value in pmd_low; but holding interrupts
+ * off blocks the TLB flush between present updates, which guarantees that a
+ * successful __pte_offset_map() points to a page from matched halves.
+ */
+#define config_might_irq_save(flags)	local_irq_save(flags)
+#define config_might_irq_restore(flags)	local_irq_restore(flags)
+#else
+#define config_might_irq_save(flags)
+#define config_might_irq_restore(flags)
+#endif
+
 pte_t *__pte_offset_map(pmd_t *pmd, unsigned long addr, pmd_t *pmdvalp)
 {
+	unsigned long __maybe_unused flags;
 	pmd_t pmdval;
 
 	rcu_read_lock();
+	config_might_irq_save(flags);
 	pmdval = pmdp_get_lockless(pmd);
+	config_might_irq_restore(flags);
+
 	if (pmdvalp)
 		*pmdvalp = pmdval;
 	if (unlikely(pmd_none(pmdval) || is_pmd_migration_entry(pmdval)))
