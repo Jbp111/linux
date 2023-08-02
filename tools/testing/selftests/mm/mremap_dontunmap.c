@@ -18,6 +18,8 @@
 unsigned long page_size;
 char *page_buffer;
 
+#define MREMAP_DONTUNMAP 4 
+
 static void dump_maps(void)
 {
 	char cmd[32];

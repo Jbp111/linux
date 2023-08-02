@@ -2352,7 +2352,6 @@ skip:
 			}
 			if (*result == SCAN_SUCCEED)
 				++khugepaged_pages_collapsed;
-			}
 
 			/* move to next address */
 			khugepaged_scan.address += HPAGE_PMD_SIZE;
