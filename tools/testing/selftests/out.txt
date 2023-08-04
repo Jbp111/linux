@@ -1,0 +1,3891 @@
+make[1]: Entering directory '/root/test_jay/linux/tools/testing/selftests/mm'
+
+Warning: missing liburing support. Some tests will be skipped.
+
+make[1]: Leaving directory '/root/test_jay/linux/tools/testing/selftests/mm'
+make[1]: Entering directory '/root/test_jay/linux/tools/testing/selftests/mm'
+
+Warning: missing liburing support. Some tests will be skipped.
+
+TAP version 13
+1..38
+# timeout set to 45
+# selftests: mm: cow
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# ok 21 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with swapped out base page
+# ok 22 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 23 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# ok 21 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with swapped out base page
+# ok 22 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 23 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 24 No leak from child into parent
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# ok 21 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with swapped out base page
+# ok 22 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 23 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 24 No leak from child into parent
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with base page
+# ok 25 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with swapped out base page
+# ok 26 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 27 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# ok 21 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with swapped out base page
+# ok 22 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 23 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 24 No leak from child into parent
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with base page
+# ok 25 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with swapped out base page
+# ok 26 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 27 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# ok 28 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# ok 21 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with swapped out base page
+# ok 22 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 23 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 24 No leak from child into parent
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with base page
+# ok 25 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with swapped out base page
+# ok 26 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 27 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# ok 28 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with base page
+# ok 29 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with swapped out base page
+# ok 30 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 31 # SKIP need more free huge pages
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# ok 21 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with swapped out base page
+# ok 22 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 23 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 24 No leak from child into parent
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with base page
+# ok 25 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with swapped out base page
+# ok 26 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 27 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# ok 28 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with base page
+# ok 29 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with swapped out base page
+# ok 30 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 31 # SKIP need more free huge pages
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# ok 32 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with base page
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..63
+# # [INFO] Anonymous memory tests in private mappings
+# # [RUN] Basic COW after fork() ... with base page
+# ok 1 No leak from parent into child
+# # [RUN] Basic COW after fork() ... with swapped out base page
+# ok 2 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() ... with hugetlb (16777216 kB)
+# ok 3 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() ... with hugetlb (16384 kB)
+# ok 4 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with base page
+# ok 5 No leak from parent into child
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with swapped out base page
+# ok 6 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 7 # SKIP need more free huge pages
+# # [RUN] Basic COW after fork() with mprotect() optimization ... with hugetlb (16384 kB)
+# ok 8 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with base page
+# ok 9 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child ... with swapped out base page
+# ok 10 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16777216 kB)
+# ok 11 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child ... with hugetlb (16384 kB)
+# not ok 12 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with base page
+# ok 13 No leak from parent into child
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with swapped out base page
+# ok 14 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16777216 kB)
+# ok 15 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in child with mprotect() optimization ... with hugetlb (16384 kB)
+# not ok 16 No leak from parent into child
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with base page
+# ok 17 No leak from child into parent
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with swapped out base page
+# ok 18 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] vmsplice() before fork(), unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 20 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with base page
+# ok 21 No leak from child into parent
+# # [RUN] vmsplice() + unmap in parent after fork() ... with swapped out base page
+# ok 22 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16777216 kB)
+# ok 23 # SKIP need more free huge pages
+# # [RUN] vmsplice() + unmap in parent after fork() ... with hugetlb (16384 kB)
+# not ok 24 No leak from child into parent
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with base page
+# ok 25 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with swapped out base page
+# ok 26 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 27 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# ok 28 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with base page
+# ok 29 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with swapped out base page
+# ok 30 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with hugetlb (16777216 kB)
+# ok 31 # SKIP need more free huge pages
+# # [RUN] R/O GUP-fast pin on R/O-mapped shared page ... with hugetlb (16384 kB)
+# ok 32 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with base page
+# ok 33 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with swapped out base page
+# ok 34 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16777216 kB)
+# ok 35 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16384 kB)
+# erm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with swapped out base page
+# ok 34 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16777216 kB)
+# ok 35 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16384 kB)
+# ok 36 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with base page
+# erm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with swapped out base page
+# ok 34 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16777216 kB)
+# ok 35 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16384 kB)
+# ok 36 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with base page
+# ok 37 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with swapped out base page
+# ok 38 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with hugetlb (16777216 kB)
+# ok 39 # SKIP need more free huge pages
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with hugetlb (16384 kB)
+# erm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with swapped out base page
+# ok 34 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16777216 kB)
+# ok 35 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped previously-shared page ... with hugetlb (16384 kB)
+# ok 36 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with base page
+# ok 37 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with swapped out base page
+# ok 38 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with hugetlb (16777216 kB)
+# ok 39 # SKIP need more free huge pages
+# # [RUN] R/O GUP-fast pin on R/O-mapped previously-shared page ... with hugetlb (16384 kB)
+# ok 40 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped exclusive page ... with base page
+# ok 41 Longterm R/O pin is reliable
+# # [RUN] R/O GUP pin on R/O-mapped exclusive page ... with swapped out base page
+# ok 42 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP pin on R/O-mapped exclusive page ... with hugetlb (16777216 kB)
+# ok 43 # SKIP need more free huge pages
+# # [RUN] R/O GUP pin on R/O-mapped exclusive page ... with hugetlb (16384 kB)
+# ok 44 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped exclusive page ... with base page
+# ok 45 Longterm R/O pin is reliable
+# # [RUN] R/O GUP-fast pin on R/O-mapped exclusive page ... with swapped out base page
+# ok 46 # SKIP MADV_PAGEOUT did not work, is swap enabled?
+# # [RUN] R/O GUP-fast pin on R/O-mapped exclusive page ... with hugetlb (16777216 kB)
+# ok 47 # SKIP need more free huge pages
+# # [RUN] R/O GUP-fast pin on R/O-mapped exclusive page ... with hugetlb (16384 kB)
+# ok 48 Longterm R/O pin is reliable
+# # [RUN] Non-anonymous memory tests in private mappings
+# # [RUN] Basic COW ... with shared zeropage
+# ok 49 Other mapping not modified
+# # [RUN] Basic COW ... with memfd
+# ok 50 Other mapping not modified
+# # [RUN] Basic COW ... with tmpfile
+# ok 51 Other mapping not modified
+# # [RUN] Basic COW ... with memfd hugetlb (16777216 kB)
+# ok 52 # SKIP need more free huge pages
+# # [RUN] Basic COW ... with memfd hugetlb (16384 kB)
+# ok 53 Other mapping not modified
+# # [RUN] R/O longterm GUP pin ... with shared zeropage
+# ok 54 Longterm R/O pin is reliable
+# # [RUN] R/O longterm GUP pin ... with memfd
+# ok 55 Longterm R/O pin is reliable
+# # [RUN] R/O longterm GUP pin ... with tmpfile
+# ok 56 Longterm R/O pin is reliable
+# # [RUN] R/O longterm GUP pin ... with memfd hugetlb (16777216 kB)
+# ok 57 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP pin ... with memfd hugetlb (16384 kB)
+# ok 58 Longterm R/O pin is reliable
+# # [RUN] R/O longterm GUP-fast pin ... with shared zeropage
+# ok 59 Longterm R/O pin is reliable
+# # [RUN] R/O longterm GUP-fast pin ... with memfd
+# ok 60 Longterm R/O pin is reliable
+# # [RUN] R/O longterm GUP-fast pin ... with tmpfile
+# ok 61 Longterm R/O pin is reliable
+# # [RUN] R/O longterm GUP-fast pin ... with memfd hugetlb (16777216 kB)
+# ok 62 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP-fast pin ... with memfd hugetlb (16384 kB)
+# ok 63 Longterm R/O pin is reliable
+# Bail out! 4 out of 63 tests failed
+# # Totals: pass:32 fail:4 xfail:0 xpass:0 skip:27 error:0
+not ok 1 selftests: mm: cow # exit=1
+# timeout set to 45
+# selftests: mm: compaction_test
+#
+not ok 2 selftests: mm: compaction_test # TIMEOUT 45 seconds
+# timeout set to 45
+# selftests: mm: gup_longterm
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..40
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with memfd
+# ok 1 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with tmpfile
+# ok 2 Should have failed
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 3 Should have failed
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 4 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 5 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd
+# ok 6 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with tmpfile
+# ok 7 Should have failed
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 8 Should have failed
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 9 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 10 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with memfd
+# ok 11 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with tmpfile
+# ok 12 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 13 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 14 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 15 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd
+# ok 16 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with tmpfile
+# ok 17 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 18 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 20 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with memfd
+# ok 21 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 22 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 23 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 24 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 25 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd
+# ok 26 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 27 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 28 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 29 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 30 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with memfd
+# ok 31 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 32 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 33 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 34 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 35 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd
+# ok 36 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 37 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 38 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 39 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 40 Should have worked
+# # Totals: pass:32 fail:0 xfail:0 xpass:0 skip:8 error:0
+ok 3 selftests: mm: gup_longterm
+# timeout set to 45
+# selftests: mm: gup_test
+# GUP_FAST_BENCHMARK: Time: get:5370 put:1771 us
+ok 4 selftests: mm: gup_test
+# timeout set to 45
+# selftests: mm: hmm-tests
+# TAP version 13
+# 1..56
+# # Starting 56 tests from 4 test cases.
+# #  RUN           hmm.hmm_device_private.open_close ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:open_close:Expected self->fd (-1) >= 0 (0)
+# # open_close: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.open_close
+# not ok 1 hmm.hmm_device_private.open_close
+# #  RUN           hmm.hmm_device_private.anon_read ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_read:Expected self->fd (-1) >= 0 (0)
+# # anon_read: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_read
+# not ok 2 hmm.hmm_device_private.anon_read
+# #  RUN           hmm.hmm_device_private.anon_read_prot ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_read_prot:Expected self->fd (-1) >= 0 (0)
+# # anon_read_prot: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_read_prot
+# not ok 3 hmm.hmm_device_private.anon_read_prot
+# #  RUN           hmm.hmm_device_private.anon_write ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_write:Expected self->fd (-1) >= 0 (0)
+# # anon_write: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_write
+# not ok 4 hmm.hmm_device_private.anon_write
+# #  RUN           hmm.hmm_device_private.anon_write_prot ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_write_prot:Expected self->fd (-1) >= 0 (0)
+# # anon_write_prot: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_write_prot
+# not ok 5 hmm.hmm_device_private.anon_write_prot
+# #  RUN           hmm.hmm_device_private.anon_write_child ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_write_child:Expected self->fd (-1) >= 0 (0)
+# # anon_write_child: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_write_child
+# not ok 6 hmm.hmm_device_private.anon_write_child
+# #  RUN           hmm.hmm_device_private.anon_write_child_shared ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_write_child_shared:Expected self->fd (-1) >= 0 (0)
+# # anon_write_child_shared: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_write_child_shared
+# not ok 7 hmm.hmm_device_private.anon_write_child_shared
+# #  RUN           hmm.hmm_device_private.anon_write_huge ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_write_huge:Expected self->fd (-1) >= 0 (0)
+# # anon_write_huge: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_write_huge
+# not ok 8 hmm.hmm_device_private.anon_write_huge
+# #  RUN           hmm.hmm_device_private.anon_write_hugetlbfs ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_write_hugetlbfs:Expected self->fd (-1) >= 0 (0)
+# # anon_write_hugetlbfs: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_write_hugetlbfs
+# not ok 9 hmm.hmm_device_private.anon_write_hugetlbfs
+# #  RUN           hmm.hmm_device_private.file_read ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:file_read:Expected self->fd (-1) >= 0 (0)
+# # file_read: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.file_read
+# not ok 10 hmm.hmm_device_private.file_read
+# #  RUN           hmm.hmm_device_private.file_write ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:file_write:Expected self->fd (-1) >= 0 (0)
+# # file_write: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.file_write
+# not ok 11 hmm.hmm_device_private.file_write
+# #  RUN           hmm.hmm_device_private.migrate ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:migrate:Expected self->fd (-1) >= 0 (0)
+# # migrate: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.migrate
+# not ok 12 hmm.hmm_device_private.migrate
+# #  RUN           hmm.hmm_device_private.migrate_fault ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:migrate_fault:Expected self->fd (-1) >= 0 (0)
+# # migrate_fault: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.migrate_fault
+# not ok 13 hmm.hmm_device_private.migrate_fault
+# #  RUN           hmm.hmm_device_private.migrate_release ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:migrate_release:Expected self->fd (-1) >= 0 (0)
+# # migrate_release: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.migrate_release
+# not ok 14 hmm.hmm_device_private.migrate_release
+# #  RUN           hmm.hmm_device_private.migrate_shared ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:migrate_shared:Expected self->fd (-1) >= 0 (0)
+# # migrate_shared: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.migrate_shared
+# not ok 15 hmm.hmm_device_private.migrate_shared
+# #  RUN           hmm.hmm_device_private.migrate_multiple ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:migrate_multiple:Expected self->fd (-1) >= 0 (0)
+# # migrate_multiple: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.migrate_multiple
+# not ok 16 hmm.hmm_device_private.migrate_multiple
+# #  RUN           hmm.hmm_device_private.anon_read_multiple ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_read_multiple:Expected self->fd (-1) >= 0 (0)
+# # anon_read_multiple: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_read_multiple
+# not ok 17 hmm.hmm_device_private.anon_read_multiple
+# #  RUN           hmm.hmm_device_private.anon_teardown ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:anon_teardown:Expected self->fd (-1) >= 0 (0)
+# # anon_teardown: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.anon_teardown
+# not ok 18 hmm.hmm_device_private.anon_teardown
+# #  RUN           hmm.hmm_device_private.mixedmap ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:mixedmap:Expected self->fd (-1) >= 0 (0)
+# # mixedmap: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.mixedmap
+# not ok 19 hmm.hmm_device_private.mixedmap
+# #  RUN           hmm.hmm_device_private.compound ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:compound:Expected self->fd (-1) >= 0 (0)
+# # compound: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.compound
+# not ok 20 hmm.hmm_device_private.compound
+# #  RUN           hmm.hmm_device_private.exclusive ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:exclusive:Expected self->fd (-1) >= 0 (0)
+# # exclusive: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.exclusive
+# not ok 21 hmm.hmm_device_private.exclusive
+# #  RUN           hmm.hmm_device_private.exclusive_mprotect ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:exclusive_mprotect:Expected self->fd (-1) >= 0 (0)
+# # exclusive_mprotect: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.exclusive_mprotect
+# not ok 22 hmm.hmm_device_private.exclusive_mprotect
+# #  RUN           hmm.hmm_device_private.exclusive_cow ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:exclusive_cow:Expected self->fd (-1) >= 0 (0)
+# # exclusive_cow: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.exclusive_cow
+# not ok 23 hmm.hmm_device_private.exclusive_cow
+# #  RUN           hmm.hmm_device_private.hmm_gup_test ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:hmm_gup_test:Expected self->fd (-1) >= 0 (0)
+# # hmm_gup_test: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.hmm_gup_test
+# not ok 24 hmm.hmm_device_private.hmm_gup_test
+# #  RUN           hmm.hmm_device_private.hmm_cow_in_device ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:137:hmm_cow_in_device:Expected self->fd (-1) >= 0 (0)
+# # hmm_cow_in_device: Test terminated by assertion
+# #          FAIL  hmm.hmm_device_private.hmm_cow_in_device
+# not ok 25 hmm.hmm_device_private.hmm_cow_in_device
+# #  RUN           hmm.hmm_device_coherent.open_close ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.open_close
+# ok 26 hmm.hmm_device_coherent.open_close
+# #  RUN           hmm.hmm_device_coherent.anon_read ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_read
+# ok 27 hmm.hmm_device_coherent.anon_read
+# #  RUN           hmm.hmm_device_coherent.anon_read_prot ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_read_prot
+# ok 28 hmm.hmm_device_coherent.anon_read_prot
+# #  RUN           hmm.hmm_device_coherent.anon_write ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_write
+# ok 29 hmm.hmm_device_coherent.anon_write
+# #  RUN           hmm.hmm_device_coherent.anon_write_prot ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_write_prot
+# ok 30 hmm.hmm_device_coherent.anon_write_prot
+# #  RUN           hmm.hmm_device_coherent.anon_write_child ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_write_child
+# ok 31 hmm.hmm_device_coherent.anon_write_child
+# #  RUN           hmm.hmm_device_coherent.anon_write_child_shared ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_write_child_shared
+# ok 32 hmm.hmm_device_coherent.anon_write_child_shared
+# #  RUN           hmm.hmm_device_coherent.anon_write_huge ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_write_huge
+# ok 33 hmm.hmm_device_coherent.anon_write_huge
+# #  RUN           hmm.hmm_device_coherent.anon_write_hugetlbfs ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_write_hugetlbfs
+# ok 34 hmm.hmm_device_coherent.anon_write_hugetlbfs
+# #  RUN           hmm.hmm_device_coherent.file_read ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.file_read
+# ok 35 hmm.hmm_device_coherent.file_read
+# #  RUN           hmm.hmm_device_coherent.file_write ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.file_write
+# ok 36 hmm.hmm_device_coherent.file_write
+# #  RUN           hmm.hmm_device_coherent.migrate ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.migrate
+# ok 37 hmm.hmm_device_coherent.migrate
+# #  RUN           hmm.hmm_device_coherent.migrate_fault ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.migrate_fault
+# ok 38 hmm.hmm_device_coherent.migrate_fault
+# #  RUN           hmm.hmm_device_coherent.migrate_release ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.migrate_release
+# ok 39 hmm.hmm_device_coherent.migrate_release
+# #  RUN           hmm.hmm_device_coherent.migrate_shared ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.migrate_shared
+# ok 40 hmm.hmm_device_coherent.migrate_shared
+# #  RUN           hmm.hmm_device_coherent.migrate_multiple ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.migrate_multiple
+# ok 41 hmm.hmm_device_coherent.migrate_multiple
+# #  RUN           hmm.hmm_device_coherent.anon_read_multiple ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_read_multiple
+# ok 42 hmm.hmm_device_coherent.anon_read_multiple
+# #  RUN           hmm.hmm_device_coherent.anon_teardown ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.anon_teardown
+# ok 43 hmm.hmm_device_coherent.anon_teardown
+# #  RUN           hmm.hmm_device_coherent.mixedmap ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.mixedmap
+# ok 44 hmm.hmm_device_coherent.mixedmap
+# #  RUN           hmm.hmm_device_coherent.compound ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.compound
+# ok 45 hmm.hmm_device_coherent.compound
+# #  RUN           hmm.hmm_device_coherent.exclusive ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.exclusive
+# ok 46 hmm.hmm_device_coherent.exclusive
+# #  RUN           hmm.hmm_device_coherent.exclusive_mprotect ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.exclusive_mprotect
+# ok 47 hmm.hmm_device_coherent.exclusive_mprotect
+# #  RUN           hmm.hmm_device_coherent.exclusive_cow ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.exclusive_cow
+# ok 48 hmm.hmm_device_coherent.exclusive_cow
+# #  RUN           hmm.hmm_device_coherent.hmm_gup_test ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.hmm_gup_test
+# ok 49 hmm.hmm_device_coherent.hmm_gup_test
+# #  RUN           hmm.hmm_device_coherent.hmm_cow_in_device ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm.hmm_device_coherent.hmm_cow_in_device
+# ok 50 hmm.hmm_device_coherent.hmm_cow_in_device
+# #  RUN           hmm2.hmm2_device_private.migrate_mixed ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:148:migrate_mixed:Expected self->fd0 (-1) >= 0 (0)
+# # migrate_mixed: Test terminated by assertion
+# #          FAIL  hmm2.hmm2_device_private.migrate_mixed
+# not ok 51 hmm2.hmm2_device_private.migrate_mixed
+# #  RUN           hmm2.hmm2_device_private.snapshot ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:148:snapshot:Expected self->fd0 (-1) >= 0 (0)
+# # snapshot: Test terminated by assertion
+# #          FAIL  hmm2.hmm2_device_private.snapshot
+# not ok 52 hmm2.hmm2_device_private.snapshot
+# #  RUN           hmm2.hmm2_device_private.double_map ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror0)
+# # hmm-tests.c:148:double_map:Expected self->fd0 (-1) >= 0 (0)
+# # double_map: Test terminated by assertion
+# #          FAIL  hmm2.hmm2_device_private.double_map
+# not ok 53 hmm2.hmm2_device_private.double_map
+# #  RUN           hmm2.hmm2_device_coherent.migrate_mixed ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm2.hmm2_device_coherent.migrate_mixed
+# ok 54 hmm2.hmm2_device_coherent.migrate_mixed
+# #  RUN           hmm2.hmm2_device_coherent.snapshot ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm2.hmm2_device_coherent.snapshot
+# ok 55 hmm2.hmm2_device_coherent.snapshot
+# #  RUN           hmm2.hmm2_device_coherent.double_map ...
+# could not open hmm dmirror driver (/dev/hmm_dmirror2)
+# #      SKIP      DEVICE_COHERENT not available
+# #            OK  hmm2.hmm2_device_coherent.double_map
+# ok 56 hmm2.hmm2_device_coherent.double_map
+# # FAILED: 28 / 56 tests passed.
+# # Totals: pass:28 fail:28 xfail:0 xpass:0 skip:0 error:0
+not ok 5 selftests: mm: hmm-tests # exit=1
+# timeout set to 45
+# selftests: mm: hugetlb-madvise
+ok 6 selftests: mm: hugetlb-madvise
+# timeout set to 45
+# selftests: mm: hugepage-mmap
+# Returned address is 0x3efff0000000
+# First hex is 0
+# First hex is 3020100
+ok 7 selftests: mm: hugepage-mmap
+# timeout set to 45
+# selftests: mm: hugepage-mremap
+# userfaultfd: Function not implemented
+# Map haddr: Returned address is 0x3effff000000
+# Map daddr: Returned address is 0x3efffe000000
+# Map vaddr: Returned address is 0x3fffa7000000
+not ok 8 selftests: mm: hugepage-mremap # exit=1
+# timeout set to 45
+# selftests: mm: hugepage-shm
+# shmid: 0x1
+# shmaddr: 0x3efff0000000
+# Starting the writes:
+# ................................................................................................................................................................................................................................................................
+# Starting the Check...Done.
+ok 9 selftests: mm: hugepage-shm
+# timeout set to 45
+# selftests: mm: hugepage-vmemmap
+# munmap: Invalid argument
+# Returned address is 0x3effff000000 whose pfn is 39c000
+not ok 10 selftests: mm: hugepage-vmemmap # exit=1
+# timeout set to 45
+# selftests: mm: khugepaged
+# Reading PMD pagesize failednot ok 11 selftests: mm: khugepaged # exit=1
+# timeout set to 45
+# selftests: mm: madv_populate
+# TAP version 13
+# 1..21
+# # [RUN] test_prot_read
+# ok 1 MADV_POPULATE_READ with PROT_READ
+# ok 2 MADV_POPULATE_WRITE with PROT_READ
+# # [RUN] test_prot_write
+# ok 3 MADV_POPULATE_READ with PROT_WRITE
+# ok 4 MADV_POPULATE_WRITE with PROT_WRITE
+# # [RUN] test_holes
+# ok 5 MADV_POPULATE_READ with holes in the middle
+# ok 6 MADV_POPULATE_WRITE with holes in the middle
+# ok 7 MADV_POPULATE_READ with holes at the end
+# ok 8 MADV_POPULATE_WRITE with holes at the end
+# ok 9 MADV_POPULATE_READ with holes at the beginning
+# ok 10 MADV_POPULATE_WRITE with holes at the beginning
+# # [RUN] test_populate_read
+# ok 11 range initially not populated
+# ok 12 MADV_POPULATE_READ
+# ok 13 range is populated
+# # [RUN] test_populate_write
+# ok 14 range initially not populated
+# ok 15 MADV_POPULATE_WRITE
+# ok 16 range is populated
+# # [RUN] test_softdirty
+# ok 17 range is not softdirty
+# ok 18 MADV_POPULATE_READ
+# ok 19 range is not softdirty
+# ok 20 MADV_POPULATE_WRITE
+# ok 21 range is softdirty
+# # Totals: pass:21 fail:0 xfail:0 xpass:0 skip:0 error:0
+ok 12 selftests: mm: madv_populate
+# timeout set to 45
+# selftests: mm: map_fixed_noreplace
+# mmap() @ 0x3fffaff6c000-0x3fffaff71000 p=0x3fffaff6c000 result=Success
+# unmap() successful
+# mmap() @ 0x3fffaff6d000-0x3fffaff70000 p=0x3fffaff6d000 result=Success
+# mmap() @ 0x3fffaff6c000-0x3fffaff71000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fffaff6e000-0x3fffaff6f000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fffaff6f000-0x3fffaff71000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fffaff6c000-0x3fffaff6e000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fffaff6c000-0x3fffaff6d000 p=0x3fffaff6c000 result=Success
+# mmap() @ 0x3fffaff70000-0x3fffaff71000 p=0x3fffaff70000 result=Success
+# unmap() successful
+# OK
+ok 13 selftests: mm: map_fixed_noreplace
+# timeout set to 45
+# selftests: mm: map_hugetlb
+# Default size hugepages
+# Mapping 256 Mbytes
+# Returned address is 0x3efff0000000
+# First hex is 0
+# First hex is 3020100
+ok 14 selftests: mm: map_hugetlb
+# timeout set to 45
+# selftests: mm: map_populate
+ok 15 selftests: mm: map_populate
+# timeout set to 45
+# selftests: mm: memfd_secret
+# skip: skipping memfd_secret test (missing __NR_memfd_secret)
+ok 16 selftests: mm: memfd_secret # SKIP
+# timeout set to 45
+# selftests: mm: migration
+# TAP version 13
+# 1..3
+# # Starting 3 tests from 1 test cases.
+# #  RUN           migration.private_anon ...
+# #      SKIP      Not enough threads or NUMA nodes available
+# #            OK  migration.private_anon
+# ok 1 # SKIP Not enough threads or NUMA nodes available
+# #  RUN           migration.shared_anon ...
+# #      SKIP      Not enough threads or NUMA nodes available
+# #            OK  migration.shared_anon
+# ok 2 # SKIP Not enough threads or NUMA nodes available
+# #  RUN           migration.private_anon_thp ...
+# #      SKIP      Not enough threads or NUMA nodes available
+# #            OK  migration.private_anon_thp
+# ok 3 # SKIP Not enough threads or NUMA nodes available
+# # PASSED: 3 / 3 tests passed.
+# # Totals: pass:0 fail:0 xfail:0 xpass:0 skip:3 error:0
+ok 17 selftests: mm: migration
+# timeout set to 45
+# selftests: mm: mkdirty
+# TAP version 13
+# 1..3
+# # [INFO] PTRACE write access
+# ok 1 SIGSEGV generated, page not modified
+# # [INFO] Page migration
+# ok 2 SIGSEGV generated, page not modified
+# # [INFO] UFFDIO_COPY
+# ok 3 # SKIP __NR_userfaultfd failed
+# # Totals: pass:2 fail:0 xfail:0 xpass:0 skip:1 error:0
+ok 18 selftests: mm: mkdirty
+# timeout set to 45
+# selftests: mm: mlock-random-test
+# mlock() failure at |0x100212d0(131072)| mlock:|0x1002711c(85642)|
+not ok 19 selftests: mm: mlock-random-test # exit=255
+# timeout set to 45
+# selftests: mm: mlock2-tests
+# munlock(): Cannot allocate memory
+# munlock(): Cannot allocate memory
+not ok 20 selftests: mm: mlock2-tests # exit=2
+# timeout set to 45
+# selftests: mm: mrelease_test
+# Success reaping a child with 1MB of memory allocations
+ok 21 selftests: mm: mrelease_test
+# timeout set to 45
+# selftests: mm: mremap_dontunmap
+# OK
+ok 22 selftests: mm: mremap_dontunmap
+# timeout set to 45
+# selftests: mm: mremap_test
+# # Test configs:
+# 	threshold_mb=4
+# 	pattern_seed=1690952331
+# 
+# 1..15
+# # mremap failed: Invalid argument
+# ok 1 # XFAIL mremap - Source and Destination Regions Overlapping
+# 	Expected mremap failure
+# # mremap failed: Invalid argument
+# ok 2 # XFAIL mremap - Destination Address Misaligned (1KB-aligned)
+# 	Expected mremap failure
+# # Failed to map source region: Invalid argument
+# ok 3 # XFAIL mremap - Source Address Misaligned (1KB-aligned)
+# 	Expected mremap failure
+# ok 4 8KB mremap - Source PTE-aligned, Destination PTE-aligned
+# 	mremap time:         8187ns
+# ok 5 2MB mremap - Source 1MB-aligned, Destination PTE-aligned
+# 	mremap time:       265589ns
+# ok 6 2MB mremap - Source 1MB-aligned, Destination 1MB-aligned
+# 	mremap time:       261900ns
+# ok 7 4MB mremap - Source PMD-aligned, Destination PTE-aligned
+# 	mremap time:       520337ns
+# ok 8 4MB mremap - Source PMD-aligned, Destination 1MB-aligned
+# 	mremap time:       513285ns
+# ok 9 4MB mremap - Source PMD-aligned, Destination PMD-aligned
+# 	mremap time:       518451ns
+# ok 10 2GB mremap - Source PUD-aligned, Destination PTE-aligned
+# ok 11 2GB mremap - Source PUD-aligned, Destination 1MB-aligned
+# ok 12 2GB mremap - Source PUD-aligned, Destination PMD-aligned
+# ok 13 2GB mremap - Source PUD-aligned, Destination PUD-aligned
+# ok 14 mremap expand merge
+# ok 15 mremap expand merge offset
+# # Totals: pass:12 fail:0 xfail:3 xpass:0 skip:0 error:0
+ok 23 selftests: mm: mremap_test
+# timeout set to 45
+# selftests: mm: on-fault-limit
+# mmap should have failed, but didn't
+not ok 24 selftests: mm: on-fault-limit # exit=1
+# timeout set to 45
+# selftests: mm: thuge-gen
+# Found 16MB
+# Found 16384MB
+# Not enough huge pages for page size 16384 MB, need 4
+ok 25 selftests: mm: thuge-gen
+# timeout set to 45
+# selftests: mm: transhuge-stress
+# transhuge-stress: allocate 32175 transhuge pages, using 64351 MiB virtual memory and 251 MiB of ram
+# transhuge-stress: 0.513 s/loop, 0.016 ms/page, 125551.500 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.593 s/loop, 0.018 ms/page, 108466.772 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 106983.708 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107297.372 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.596 s/loop, 0.019 ms/page, 107981.295 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.606 s/loop, 0.019 ms/page, 106253.622 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.596 s/loop, 0.019 ms/page, 108039.496 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.607 s/loop, 0.019 ms/page, 105980.250 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.597 s/loop, 0.019 ms/page, 107791.235 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.605 s/loop, 0.019 ms/page, 106438.865 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.599 s/loop, 0.019 ms/page, 107497.374 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 106993.376 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.608 s/loop, 0.019 ms/page, 105886.928 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.598 s/loop, 0.019 ms/page, 107607.538 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 107042.288 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.602 s/loop, 0.019 ms/page, 106818.639 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 107151.659 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107191.317 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.607 s/loop, 0.019 ms/page, 105999.359 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.602 s/loop, 0.019 ms/page, 106923.275 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.597 s/loop, 0.019 ms/page, 107834.133 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.606 s/loop, 0.019 ms/page, 106161.492 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.603 s/loop, 0.019 ms/page, 106701.809 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.596 s/loop, 0.019 ms/page, 107921.048 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.607 s/loop, 0.019 ms/page, 106079.799 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.599 s/loop, 0.019 ms/page, 107465.502 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107244.253 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107167.467 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.604 s/loop, 0.019 ms/page, 106546.861 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107289.525 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.606 s/loop, 0.019 ms/page, 106211.199 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.602 s/loop, 0.019 ms/page, 106876.827 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107298.929 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107168.295 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.604 s/loop, 0.019 ms/page, 106586.771 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.606 s/loop, 0.019 ms/page, 106158.773 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.595 s/loop, 0.018 ms/page, 108142.279 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.607 s/loop, 0.019 ms/page, 105966.465 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.597 s/loop, 0.019 ms/page, 107849.661 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.604 s/loop, 0.019 ms/page, 106549.178 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107331.027 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.599 s/loop, 0.019 ms/page, 107518.486 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.602 s/loop, 0.019 ms/page, 106836.639 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.598 s/loop, 0.019 ms/page, 107533.721 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.609 s/loop, 0.019 ms/page, 105657.795 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.596 s/loop, 0.019 ms/page, 107935.719 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.606 s/loop, 0.019 ms/page, 106201.897 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 107159.511 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.598 s/loop, 0.019 ms/page, 107567.582 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.606 s/loop, 0.019 ms/page, 106136.471 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.598 s/loop, 0.019 ms/page, 107663.638 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.602 s/loop, 0.019 ms/page, 106914.076 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.602 s/loop, 0.019 ms/page, 106847.205 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.609 s/loop, 0.019 ms/page, 105614.056 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.597 s/loop, 0.019 ms/page, 107847.585 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.607 s/loop, 0.019 ms/page, 106025.287 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.598 s/loop, 0.019 ms/page, 107691.311 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.599 s/loop, 0.019 ms/page, 107465.444 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.604 s/loop, 0.019 ms/page, 106488.650 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107303.540 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.600 s/loop, 0.019 ms/page, 107251.827 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 106983.818 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.606 s/loop, 0.019 ms/page, 106174.342 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.605 s/loop, 0.019 ms/page, 106396.902 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.604 s/loop, 0.019 ms/page, 106571.078 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.602 s/loop, 0.019 ms/page, 106896.165 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.608 s/loop, 0.019 ms/page, 105792.989 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 107131.800 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.607 s/loop, 0.019 ms/page, 105947.323 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 107082.647 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.610 s/loop, 0.019 ms/page, 105450.650 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.604 s/loop, 0.019 ms/page, 106572.101 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.601 s/loop, 0.019 ms/page, 107019.565 MiB/s	   0 succeed, 32175 failed,    0 different pages
+# transhuge-stress: 0.604 s/loop, 0.019 ms/page, 106572.943 MiB/s	   0 succeed, 32175 failed,    0 different pages
+#
+not ok 26 selftests: mm: transhuge-stress # TIMEOUT 45 seconds
+# timeout set to 45
+# selftests: mm: uffd-stress
+# 
+# Usage: ./userfaultfd <test type> <MiB> <bounces>
+# 
+# Supported <test type>: anon, hugetlb, hugetlb-private, shmem, shmem-private
+# 
+# Examples:
+# 
+# # Run anonymous memory test on 100MiB region with 99999 bounces:
+# ./userfaultfd anon 100 99999
+# 
+# # Run share memory test on 1GiB region with 99 bounces:
+# ./userfaultfd shmem 1000 99
+# 
+# # Run hugetlb memory test on 256MiB region with 50 bounces:
+# ./userfaultfd hugetlb 256 50
+# 
+# # Run the same hugetlb test but using private file:
+# ./userfaultfd hugetlb-private 256 50
+# 
+# # 10MiB-~6GiB 999 bounces anonymous test, continue forever unless an error triggers
+# while ./userfaultfd anon $[RANDOM % 6000 + 10] 999; do true; done
+# 
+not ok 27 selftests: mm: uffd-stress # exit=1
+# timeout set to 45
+# selftests: mm: uffd-unit-tests
+# Testing UFFDIO_API (with syscall)... skipped [reason: cannot open userfaultfd handle]
+# Testing UFFDIO_API (with /dev/userfaultfd)... skipped [reason: cannot open userfaultfd handle]
+# Userfaultfd not supported or unprivileged, skip all tests
+ok 28 selftests: mm: uffd-unit-tests # SKIP
+# timeout set to 45
+# selftests: mm: soft-dirty
+# TAP version 13
+# 1..15
+# # dirty bit was 1, but should be 0 (i=1)
+# not ok 1 Test test_simple
+# not ok 2 Test test_vma_reuse dirty bit of allocated page
+# not ok 3 Test test_vma_reuse dirty bit of reused address page
+# Bail out! Reading PMD pagesize failed# Planned tests != run tests (15 != 3)
+# # Totals: pass:0 fail:3 xfail:0 xpass:0 skip:0 error:0
+not ok 29 selftests: mm: soft-dirty # exit=1
+# timeout set to 45
+# selftests: mm: split_huge_page_test
+# Reading PMD pagesize failed
+not ok 30 selftests: mm: split_huge_page_test # exit=1
+# timeout set to 45
+# selftests: mm: ksm_tests
+# OK
+ok 31 selftests: mm: ksm_tests
+# timeout set to 45
+# selftests: mm: ksm_functional_tests
+# TAP version 13
+# 1..6
+# # [RUN] test_unmerge
+# ok 1 Pages were unmerged
+# # [RUN] test_unmerge_discarded
+# ok 2 Pages were unmerged
+# # [RUN] test_unmerge_uffd_wp
+# ok 3 # SKIP __NR_userfaultfd failed
+# # [RUN] test_prctl
+# ok 4 Setting/clearing PR_SET_MEMORY_MERGE works
+# # [RUN] test_prctl_fork
+# TAP version 13
+# 1..6
+# # [RUN] test_unmerge
+# ok 1 Pages were unmerged
+# # [RUN] test_unmerge_discarded
+# ok 2 Pages were unmerged
+# # [RUN] test_unmerge_uffd_wp
+# ok 3 # SKIP __NR_userfaultfd failed
+# # [RUN] test_prctl
+# ok 4 Setting/clearing PR_SET_MEMORY_MERGE works
+# # [RUN] test_prctl_fork
+# ok 5 PR_SET_MEMORY_MERGE value is inherited
+# # [RUN] test_prctl_unmerge
+# ok 6 Pages were unmerged
+# # Totals: pass:5 fail:0 xfail:0 xpass:0 skip:1 error:0
+ok 32 selftests: mm: ksm_functional_tests
+# timeout set to 45
+# selftests: mm: mdwe_test
+# TAP version 13
+# 1..22
+# # Starting 22 tests from 4 test cases.
+# #  RUN           global.prctl_flags ...
+# #            OK  global.prctl_flags
+# ok 1 global.prctl_flags
+# #  RUN           mdwe.stock.mmap_READ_EXEC ...
+# #            OK  mdwe.stock.mmap_READ_EXEC
+# ok 2 mdwe.stock.mmap_READ_EXEC
+# #  RUN           mdwe.stock.mmap_WRITE_EXEC ...
+# #            OK  mdwe.stock.mmap_WRITE_EXEC
+# ok 3 mdwe.stock.mmap_WRITE_EXEC
+# #  RUN           mdwe.stock.mprotect_stay_EXEC ...
+# #            OK  mdwe.stock.mprotect_stay_EXEC
+# ok 4 mdwe.stock.mprotect_stay_EXEC
+# #  RUN           mdwe.stock.mprotect_add_EXEC ...
+# #            OK  mdwe.stock.mprotect_add_EXEC
+# ok 5 mdwe.stock.mprotect_add_EXEC
+# #  RUN           mdwe.stock.mprotect_WRITE_EXEC ...
+# #            OK  mdwe.stock.mprotect_WRITE_EXEC
+# ok 6 mdwe.stock.mprotect_WRITE_EXEC
+# #  RUN           mdwe.stock.mmap_FIXED ...
+# # mdwe_test.c:176:mmap_FIXED:Expected p (70367017635840) == self->p (70367017631744)
+# # mmap_FIXED: Test failed at step #2
+# #          FAIL  mdwe.stock.mmap_FIXED
+# not ok 7 mdwe.stock.mmap_FIXED
+# #  RUN           mdwe.stock.arm64_BTI ...
+# #      SKIP      HWCAP2_BTI not supported
+# #            OK  mdwe.stock.arm64_BTI
+# ok 8 # SKIP HWCAP2_BTI not supported
+# #  RUN           mdwe.enabled.mmap_READ_EXEC ...
+# #            OK  mdwe.enabled.mmap_READ_EXEC
+# ok 9 mdwe.enabled.mmap_READ_EXEC
+# #  RUN           mdwe.enabled.mmap_WRITE_EXEC ...
+# #            OK  mdwe.enabled.mmap_WRITE_EXEC
+# ok 10 mdwe.enabled.mmap_WRITE_EXEC
+# #  RUN           mdwe.enabled.mprotect_stay_EXEC ...
+# #            OK  mdwe.enabled.mprotect_stay_EXEC
+# ok 11 mdwe.enabled.mprotect_stay_EXEC
+# #  RUN           mdwe.enabled.mprotect_add_EXEC ...
+# #            OK  mdwe.enabled.mprotect_add_EXEC
+# ok 12 mdwe.enabled.mprotect_add_EXEC
+# #  RUN           mdwe.enabled.mprotect_WRITE_EXEC ...
+# #            OK  mdwe.enabled.mprotect_WRITE_EXEC
+# ok 13 mdwe.enabled.mprotect_WRITE_EXEC
+# #  RUN           mdwe.enabled.mmap_FIXED ...
+# # mdwe_test.c:174:mmap_FIXED:Expected p (70367017635840) == MAP_FAILED (18446744073709551615)
+# # mmap_FIXED: Test failed at step #4
+# #          FAIL  mdwe.enabled.mmap_FIXED
+# not ok 14 mdwe.enabled.mmap_FIXED
+# #  RUN           mdwe.enabled.arm64_BTI ...
+# #      SKIP      HWCAP2_BTI not supported
+# #            OK  mdwe.enabled.arm64_BTI
+# ok 15 # SKIP HWCAP2_BTI not supported
+# #  RUN           mdwe.forked.mmap_READ_EXEC ...
+# #            OK  mdwe.forked.mmap_READ_EXEC
+# ok 16 mdwe.forked.mmap_READ_EXEC
+# #  RUN           mdwe.forked.mmap_WRITE_EXEC ...
+# #            OK  mdwe.forked.mmap_WRITE_EXEC
+# ok 17 mdwe.forked.mmap_WRITE_EXEC
+# #  RUN           mdwe.forked.mprotect_stay_EXEC ...
+# #            OK  mdwe.forked.mprotect_stay_EXEC
+# ok 18 mdwe.forked.mprotect_stay_EXEC
+# #  RUN           mdwe.forked.mprotect_add_EXEC ...
+# #            OK  mdwe.forked.mprotect_add_EXEC
+# ok 19 mdwe.forked.mprotect_add_EXEC
+# #  RUN           mdwe.forked.mprotect_WRITE_EXEC ...
+# #            OK  mdwe.forked.mprotect_WRITE_EXEC
+# ok 20 mdwe.forked.mprotect_WRITE_EXEC
+# #  RUN           mdwe.forked.mmap_FIXED ...
+# # mdwe_test.c:174:mmap_FIXED:Expected p (70367017635840) == MAP_FAILED (18446744073709551615)
+# # mmap_FIXED: Test failed at step #5
+# #          FAIL  mdwe.forked.mmap_FIXED
+# not ok 21 mdwe.forked.mmap_FIXED
+# #  RUN           mdwe.forked.arm64_BTI ...
+# #      SKIP      HWCAP2_BTI not supported
+# #            OK  mdwe.forked.arm64_BTI
+# ok 22 # SKIP HWCAP2_BTI not supported
+# # FAILED: 19 / 22 tests passed.
+# # Totals: pass:16 fail:3 xfail:0 xpass:0 skip:3 error:0
+not ok 33 selftests: mm: mdwe_test # exit=1
+# timeout set to 45
+# selftests: mm: protection_keys
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# test 18 PASSED (iteration 1)
+# test 19 PASSED (iteration 1)
+# test  0 PASSED (iteration 2)
+# test  1 PASSED (iteration 2)
+# test  2 PASSED (iteration 2)
+# test  3 PASSED (iteration 2)
+# test  4 PASSED (iteration 2)
+# test  5 PASSED (iteration 2)
+# test  6 PASSED (iteration 2)
+# test  7 PASSED (iteration 2)
+# test  8 PASSED (iteration 2)
+# test  9 PASSED (iteration 2)
+# test 10 PASSED (iteration 2)
+# test 11 PASSED (iteration 2)
+# test 12 PASSED (iteration 2)
+# test 13 PASSED (iteration 2)
+# test 14 PASSED (iteration 2)
+# test 15 PASSED (iteration 2)
+# test 16 PASSED (iteration 2)
+# test 17 PASSED (iteration 2)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# test 18 PASSED (iteration 1)
+# test 19 PASSED (iteration 1)
+# test  0 PASSED (iteration 2)
+# test  1 PASSED (iteration 2)
+# test  2 PASSED (iteration 2)
+# test  3 PASSED (iteration 2)
+# test  4 PASSED (iteration 2)
+# test  5 PASSED (iteration 2)
+# test  6 PASSED (iteration 2)
+# test  7 PASSED (iteration 2)
+# test  8 PASSED (iteration 2)
+# test  9 PASSED (iteration 2)
+# test 10 PASSED (iteration 2)
+# test 11 PASSED (iteration 2)
+# test 12 PASSED (iteration 2)
+# test 13 PASSED (iteration 2)
+# test 14 PASSED (iteration 2)
+# test 15 PASSED (iteration 2)
+# test 16 PASSED (iteration 2)
+# test 17 PASSED (iteration 2)
+# test 18 PASSED (iteration 2)
+# test 19 PASSED (iteration 2)
+# test  0 PASSED (iteration 3)
+# test  1 PASSED (iteration 3)
+# test  2 PASSED (iteration 3)
+# test  3 PASSED (iteration 3)
+# test  4 PASSED (iteration 3)
+# test  5 PASSED (iteration 3)
+# test  6 PASSED (iteration 3)
+# test  7 PASSED (iteration 3)
+# test  8 PASSED (iteration 3)
+# test  9 PASSED (iteration 3)
+# test 10 PASSED (iteration 3)
+# test 11 PASSED (iteration 3)
+# test 12 PASSED (iteration 3)
+# test 13 PASSED (iteration 3)
+# test 14 PASSED (iteration 3)
+# test 15 PASSED (iteration 3)
+# test 16 PASSED (iteration 3)
+# test 17 PASSED (iteration 3)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# test 18 PASSED (iteration 1)
+# test 19 PASSED (iteration 1)
+# test  0 PASSED (iteration 2)
+# test  1 PASSED (iteration 2)
+# test  2 PASSED (iteration 2)
+# test  3 PASSED (iteration 2)
+# test  4 PASSED (iteration 2)
+# test  5 PASSED (iteration 2)
+# test  6 PASSED (iteration 2)
+# test  7 PASSED (iteration 2)
+# test  8 PASSED (iteration 2)
+# test  9 PASSED (iteration 2)
+# test 10 PASSED (iteration 2)
+# test 11 PASSED (iteration 2)
+# test 12 PASSED (iteration 2)
+# test 13 PASSED (iteration 2)
+# test 14 PASSED (iteration 2)
+# test 15 PASSED (iteration 2)
+# test 16 PASSED (iteration 2)
+# test 17 PASSED (iteration 2)
+# test 18 PASSED (iteration 2)
+# test 19 PASSED (iteration 2)
+# test  0 PASSED (iteration 3)
+# test  1 PASSED (iteration 3)
+# test  2 PASSED (iteration 3)
+# test  3 PASSED (iteration 3)
+# test  4 PASSED (iteration 3)
+# test  5 PASSED (iteration 3)
+# test  6 PASSED (iteration 3)
+# test  7 PASSED (iteration 3)
+# test  8 PASSED (iteration 3)
+# test  9 PASSED (iteration 3)
+# test 10 PASSED (iteration 3)
+# test 11 PASSED (iteration 3)
+# test 12 PASSED (iteration 3)
+# test 13 PASSED (iteration 3)
+# test 14 PASSED (iteration 3)
+# test 15 PASSED (iteration 3)
+# test 16 PASSED (iteration 3)
+# test 17 PASSED (iteration 3)
+# test 18 PASSED (iteration 3)
+# test 19 PASSED (iteration 3)
+# test  0 PASSED (iteration 4)
+# test  1 PASSED (iteration 4)
+# test  2 PASSED (iteration 4)
+# test  3 PASSED (iteration 4)
+# test  4 PASSED (iteration 4)
+# test  5 PASSED (iteration 4)
+# test  6 PASSED (iteration 4)
+# test  7 PASSED (iteration 4)
+# test  8 PASSED (iteration 4)
+# test  9 PASSED (iteration 4)
+# test 10 PASSED (iteration 4)
+# test 11 PASSED (iteration 4)
+# test 12 PASSED (iteration 4)
+# test 13 PASSED (iteration 4)
+# test 14 PASSED (iteration 4)
+# test 15 PASSED (iteration 4)
+# test 16 PASSED (iteration 4)
+# test 17 PASSED (iteration 4)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# test 18 PASSED (iteration 1)
+# test 19 PASSED (iteration 1)
+# test  0 PASSED (iteration 2)
+# test  1 PASSED (iteration 2)
+# test  2 PASSED (iteration 2)
+# test  3 PASSED (iteration 2)
+# test  4 PASSED (iteration 2)
+# test  5 PASSED (iteration 2)
+# test  6 PASSED (iteration 2)
+# test  7 PASSED (iteration 2)
+# test  8 PASSED (iteration 2)
+# test  9 PASSED (iteration 2)
+# test 10 PASSED (iteration 2)
+# test 11 PASSED (iteration 2)
+# test 12 PASSED (iteration 2)
+# test 13 PASSED (iteration 2)
+# test 14 PASSED (iteration 2)
+# test 15 PASSED (iteration 2)
+# test 16 PASSED (iteration 2)
+# test 17 PASSED (iteration 2)
+# test 18 PASSED (iteration 2)
+# test 19 PASSED (iteration 2)
+# test  0 PASSED (iteration 3)
+# test  1 PASSED (iteration 3)
+# test  2 PASSED (iteration 3)
+# test  3 PASSED (iteration 3)
+# test  4 PASSED (iteration 3)
+# test  5 PASSED (iteration 3)
+# test  6 PASSED (iteration 3)
+# test  7 PASSED (iteration 3)
+# test  8 PASSED (iteration 3)
+# test  9 PASSED (iteration 3)
+# test 10 PASSED (iteration 3)
+# test 11 PASSED (iteration 3)
+# test 12 PASSED (iteration 3)
+# test 13 PASSED (iteration 3)
+# test 14 PASSED (iteration 3)
+# test 15 PASSED (iteration 3)
+# test 16 PASSED (iteration 3)
+# test 17 PASSED (iteration 3)
+# test 18 PASSED (iteration 3)
+# test 19 PASSED (iteration 3)
+# test  0 PASSED (iteration 4)
+# test  1 PASSED (iteration 4)
+# test  2 PASSED (iteration 4)
+# test  3 PASSED (iteration 4)
+# test  4 PASSED (iteration 4)
+# test  5 PASSED (iteration 4)
+# test  6 PASSED (iteration 4)
+# test  7 PASSED (iteration 4)
+# test  8 PASSED (iteration 4)
+# test  9 PASSED (iteration 4)
+# test 10 PASSED (iteration 4)
+# test 11 PASSED (iteration 4)
+# test 12 PASSED (iteration 4)
+# test 13 PASSED (iteration 4)
+# test 14 PASSED (iteration 4)
+# test 15 PASSED (iteration 4)
+# test 16 PASSED (iteration 4)
+# test 17 PASSED (iteration 4)
+# test 18 PASSED (iteration 4)
+# test 19 PASSED (iteration 4)
+# test  0 PASSED (iteration 5)
+# test  1 PASSED (iteration 5)
+# test  2 PASSED (iteration 5)
+# test  3 PASSED (iteration 5)
+# test  4 PASSED (iteration 5)
+# test  5 PASSED (iteration 5)
+# test  6 PASSED (iteration 5)
+# test  7 PASSED (iteration 5)
+# test  8 PASSED (iteration 5)
+# test  9 PASSED (iteration 5)
+# test 10 PASSED (iteration 5)
+# test 11 PASSED (iteration 5)
+# test 12 PASSED (iteration 5)
+# test 13 PASSED (iteration 5)
+# test 14 PASSED (iteration 5)
+# test 15 PASSED (iteration 5)
+# test 16 PASSED (iteration 5)
+# test 17 PASSED (iteration 5)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# test 18 PASSED (iteration 1)
+# test 19 PASSED (iteration 1)
+# test  0 PASSED (iteration 2)
+# test  1 PASSED (iteration 2)
+# test  2 PASSED (iteration 2)
+# test  3 PASSED (iteration 2)
+# test  4 PASSED (iteration 2)
+# test  5 PASSED (iteration 2)
+# test  6 PASSED (iteration 2)
+# test  7 PASSED (iteration 2)
+# test  8 PASSED (iteration 2)
+# test  9 PASSED (iteration 2)
+# test 10 PASSED (iteration 2)
+# test 11 PASSED (iteration 2)
+# test 12 PASSED (iteration 2)
+# test 13 PASSED (iteration 2)
+# test 14 PASSED (iteration 2)
+# test 15 PASSED (iteration 2)
+# test 16 PASSED (iteration 2)
+# test 17 PASSED (iteration 2)
+# test 18 PASSED (iteration 2)
+# test 19 PASSED (iteration 2)
+# test  0 PASSED (iteration 3)
+# test  1 PASSED (iteration 3)
+# test  2 PASSED (iteration 3)
+# test  3 PASSED (iteration 3)
+# test  4 PASSED (iteration 3)
+# test  5 PASSED (iteration 3)
+# test  6 PASSED (iteration 3)
+# test  7 PASSED (iteration 3)
+# test  8 PASSED (iteration 3)
+# test  9 PASSED (iteration 3)
+# test 10 PASSED (iteration 3)
+# test 11 PASSED (iteration 3)
+# test 12 PASSED (iteration 3)
+# test 13 PASSED (iteration 3)
+# test 14 PASSED (iteration 3)
+# test 15 PASSED (iteration 3)
+# test 16 PASSED (iteration 3)
+# test 17 PASSED (iteration 3)
+# test 18 PASSED (iteration 3)
+# test 19 PASSED (iteration 3)
+# test  0 PASSED (iteration 4)
+# test  1 PASSED (iteration 4)
+# test  2 PASSED (iteration 4)
+# test  3 PASSED (iteration 4)
+# test  4 PASSED (iteration 4)
+# test  5 PASSED (iteration 4)
+# test  6 PASSED (iteration 4)
+# test  7 PASSED (iteration 4)
+# test  8 PASSED (iteration 4)
+# test  9 PASSED (iteration 4)
+# test 10 PASSED (iteration 4)
+# test 11 PASSED (iteration 4)
+# test 12 PASSED (iteration 4)
+# test 13 PASSED (iteration 4)
+# test 14 PASSED (iteration 4)
+# test 15 PASSED (iteration 4)
+# test 16 PASSED (iteration 4)
+# test 17 PASSED (iteration 4)
+# test 18 PASSED (iteration 4)
+# test 19 PASSED (iteration 4)
+# test  0 PASSED (iteration 5)
+# test  1 PASSED (iteration 5)
+# test  2 PASSED (iteration 5)
+# test  3 PASSED (iteration 5)
+# test  4 PASSED (iteration 5)
+# test  5 PASSED (iteration 5)
+# test  6 PASSED (iteration 5)
+# test  7 PASSED (iteration 5)
+# test  8 PASSED (iteration 5)
+# test  9 PASSED (iteration 5)
+# test 10 PASSED (iteration 5)
+# test 11 PASSED (iteration 5)
+# test 12 PASSED (iteration 5)
+# test 13 PASSED (iteration 5)
+# test 14 PASSED (iteration 5)
+# test 15 PASSED (iteration 5)
+# test 16 PASSED (iteration 5)
+# test 17 PASSED (iteration 5)
+# test 18 PASSED (iteration 5)
+# test 19 PASSED (iteration 5)
+# test  0 PASSED (iteration 6)
+# test  1 PASSED (iteration 6)
+# test  2 PASSED (iteration 6)
+# test  3 PASSED (iteration 6)
+# test  4 PASSED (iteration 6)
+# test  5 PASSED (iteration 6)
+# test  6 PASSED (iteration 6)
+# test  7 PASSED (iteration 6)
+# test  8 PASSED (iteration 6)
+# test  9 PASSED (iteration 6)
+# test 10 PASSED (iteration 6)
+# test 11 PASSED (iteration 6)
+# test 12 PASSED (iteration 6)
+# test 13 PASSED (iteration 6)
+# test 14 PASSED (iteration 6)
+# test 15 PASSED (iteration 6)
+# test 16 PASSED (iteration 6)
+# test 17 PASSED (iteration 6)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# test 18 PASSED (iteration 1)
+# test 19 PASSED (iteration 1)
+# test  0 PASSED (iteration 2)
+# test  1 PASSED (iteration 2)
+# test  2 PASSED (iteration 2)
+# test  3 PASSED (iteration 2)
+# test  4 PASSED (iteration 2)
+# test  5 PASSED (iteration 2)
+# test  6 PASSED (iteration 2)
+# test  7 PASSED (iteration 2)
+# test  8 PASSED (iteration 2)
+# test  9 PASSED (iteration 2)
+# test 10 PASSED (iteration 2)
+# test 11 PASSED (iteration 2)
+# test 12 PASSED (iteration 2)
+# test 13 PASSED (iteration 2)
+# test 14 PASSED (iteration 2)
+# test 15 PASSED (iteration 2)
+# test 16 PASSED (iteration 2)
+# test 17 PASSED (iteration 2)
+# test 18 PASSED (iteration 2)
+# test 19 PASSED (iteration 2)
+# test  0 PASSED (iteration 3)
+# test  1 PASSED (iteration 3)
+# test  2 PASSED (iteration 3)
+# test  3 PASSED (iteration 3)
+# test  4 PASSED (iteration 3)
+# test  5 PASSED (iteration 3)
+# test  6 PASSED (iteration 3)
+# test  7 PASSED (iteration 3)
+# test  8 PASSED (iteration 3)
+# test  9 PASSED (iteration 3)
+# test 10 PASSED (iteration 3)
+# test 11 PASSED (iteration 3)
+# test 12 PASSED (iteration 3)
+# test 13 PASSED (iteration 3)
+# test 14 PASSED (iteration 3)
+# test 15 PASSED (iteration 3)
+# test 16 PASSED (iteration 3)
+# test 17 PASSED (iteration 3)
+# test 18 PASSED (iteration 3)
+# test 19 PASSED (iteration 3)
+# test  0 PASSED (iteration 4)
+# test  1 PASSED (iteration 4)
+# test  2 PASSED (iteration 4)
+# test  3 PASSED (iteration 4)
+# test  4 PASSED (iteration 4)
+# test  5 PASSED (iteration 4)
+# test  6 PASSED (iteration 4)
+# test  7 PASSED (iteration 4)
+# test  8 PASSED (iteration 4)
+# test  9 PASSED (iteration 4)
+# test 10 PASSED (iteration 4)
+# test 11 PASSED (iteration 4)
+# test 12 PASSED (iteration 4)
+# test 13 PASSED (iteration 4)
+# test 14 PASSED (iteration 4)
+# test 15 PASSED (iteration 4)
+# test 16 PASSED (iteration 4)
+# test 17 PASSED (iteration 4)
+# test 18 PASSED (iteration 4)
+# test 19 PASSED (iteration 4)
+# test  0 PASSED (iteration 5)
+# test  1 PASSED (iteration 5)
+# test  2 PASSED (iteration 5)
+# test  3 PASSED (iteration 5)
+# test  4 PASSED (iteration 5)
+# test  5 PASSED (iteration 5)
+# test  6 PASSED (iteration 5)
+# test  7 PASSED (iteration 5)
+# test  8 PASSED (iteration 5)
+# test  9 PASSED (iteration 5)
+# test 10 PASSED (iteration 5)
+# test 11 PASSED (iteration 5)
+# test 12 PASSED (iteration 5)
+# test 13 PASSED (iteration 5)
+# test 14 PASSED (iteration 5)
+# test 15 PASSED (iteration 5)
+# test 16 PASSED (iteration 5)
+# test 17 PASSED (iteration 5)
+# test 18 PASSED (iteration 5)
+# test 19 PASSED (iteration 5)
+# test  0 PASSED (iteration 6)
+# test  1 PASSED (iteration 6)
+# test  2 PASSED (iteration 6)
+# test  3 PASSED (iteration 6)
+# test  4 PASSED (iteration 6)
+# test  5 PASSED (iteration 6)
+# test  6 PASSED (iteration 6)
+# test  7 PASSED (iteration 6)
+# test  8 PASSED (iteration 6)
+# test  9 PASSED (iteration 6)
+# test 10 PASSED (iteration 6)
+# test 11 PASSED (iteration 6)
+# test 12 PASSED (iteration 6)
+# test 13 PASSED (iteration 6)
+# test 14 PASSED (iteration 6)
+# test 15 PASSED (iteration 6)
+# test 16 PASSED (iteration 6)
+# test 17 PASSED (iteration 6)
+# test 18 PASSED (iteration 6)
+# test 19 PASSED (iteration 6)
+# test  0 PASSED (iteration 7)
+# test  1 PASSED (iteration 7)
+# test  2 PASSED (iteration 7)
+# test  3 PASSED (iteration 7)
+# test  4 PASSED (iteration 7)
+# test  5 PASSED (iteration 7)
+# test  6 PASSED (iteration 7)
+# test  7 PASSED (iteration 7)
+# test  8 PASSED (iteration 7)
+# test  9 PASSED (iteration 7)
+# test 10 PASSED (iteration 7)
+# test 11 PASSED (iteration 7)
+# test 12 PASSED (iteration 7)
+# test 13 PASSED (iteration 7)
+# test 14 PASSED (iteration 7)
+# test 15 PASSED (iteration 7)
+# test 16 PASSED (iteration 7)
+# test 17 PASSED (iteration 7)
+# has pkeys: 1
+# startup pkey_reg: 3c3fffffffffffff
+# test  0 PASSED (iteration 1)
+# test  1 PASSED (iteration 1)
+# test  2 PASSED (iteration 1)
+# test  3 PASSED (iteration 1)
+# test  4 PASSED (iteration 1)
+# test  5 PASSED (iteration 1)
+# test  6 PASSED (iteration 1)
+# test  7 PASSED (iteration 1)
+# test  8 PASSED (iteration 1)
+# test  9 PASSED (iteration 1)
+# test 10 PASSED (iteration 1)
+# test 11 PASSED (iteration 1)
+# test 12 PASSED (iteration 1)
+# test 13 PASSED (iteration 1)
+# test 14 PASSED (iteration 1)
+# test 15 PASSED (iteration 1)
+# test 16 PASSED (iteration 1)
+# test 17 PASSED (iteration 1)
+# test 18 PASSED (iteration 1)
+# test 19 PASSED (iteration 1)
+# test  0 PASSED (iteration 2)
+# test  1 PASSED (iteration 2)
+# test  2 PASSED (iteration 2)
+# test  3 PASSED (iteration 2)
+# test  4 PASSED (iteration 2)
+# test  5 PASSED (iteration 2)
+# test  6 PASSED (iteration 2)
+# test  7 PASSED (iteration 2)
+# test  8 PASSED (iteration 2)
+# test  9 PASSED (iteration 2)
+# test 10 PASSED (iteration 2)
+# test 11 PASSED (iteration 2)
+# test 12 PASSED (iteration 2)
+# test 13 PASSED (iteration 2)
+# test 14 PASSED (iteration 2)
+# test 15 PASSED (iteration 2)
+# test 16 PASSED (iteration 2)
+# test 17 PASSED (iteration 2)
+# test 18 PASSED (iteration 2)
+# test 19 PASSED (iteration 2)
+# test  0 PASSED (iteration 3)
+# test  1 PASSED (iteration 3)
+# test  2 PASSED (iteration 3)
+# test  3 PASSED (iteration 3)
+# test  4 PASSED (iteration 3)
+# test  5 PASSED (iteration 3)
+# test  6 PASSED (iteration 3)
+# test  7 PASSED (iteration 3)
+# test  8 PASSED (iteration 3)
+# test  9 PASSED (iteration 3)
+# test 10 PASSED (iteration 3)
+# test 11 PASSED (iteration 3)
+# test 12 PASSED (iteration 3)
+# test 13 PASSED (iteration 3)
+# test 14 PASSED (iteration 3)
+# test 15 PASSED (iteration 3)
+# test 16 PASSED (iteration 3)
+# test 17 PASSED (iteration 3)
+# test 18 PASSED (iteration 3)
+# test 19 PASSED (iteration 3)
+# test  0 PASSED (iteration 4)
+# test  1 PASSED (iteration 4)
+# test  2 PASSED (iteration 4)
+# test  3 PASSED (iteration 4)
+# test  4 PASSED (iteration 4)
+# test  5 PASSED (iteration 4)
+# test  6 PASSED (iteration 4)
+# test  7 PASSED (iteration 4)
+# test  8 PASSED (iteration 4)
+# test  9 PASSED (iteration 4)
+# test 10 PASSED (iteration 4)
+# test 11 PASSED (iteration 4)
+# test 12 PASSED (iteration 4)
+# test 13 PASSED (iteration 4)
+# test 14 PASSED (iteration 4)
+# test 15 PASSED (iteration 4)
+# test 16 PASSED (iteration 4)
+# test 17 PASSED (iteration 4)
+# test 18 PASSED (iteration 4)
+# test 19 PASSED (iteration 4)
+# test  0 PASSED (iteration 5)
+# test  1 PASSED (iteration 5)
+# test  2 PASSED (iteration 5)
+# test  3 PASSED (iteration 5)
+# test  4 PASSED (iteration 5)
+# test  5 PASSED (iteration 5)
+# test  6 PASSED (iteration 5)
+# test  7 PASSED (iteration 5)
+# test  8 PASSED (iteration 5)
+# test  9 PASSED (iteration 5)
+# test 10 PASSED (iteration 5)
+# test 11 PASSED (iteration 5)
+# test 12 PASSED (iteration 5)
+# test 13 PASSED (iteration 5)
+# test 14 PASSED (iteration 5)
+# test 15 PASSED (iteration 5)
+# test 16 PASSED (iteration 5)
+# test 17 PASSED (iteration 5)
+# test 18 PASSED (iteration 5)
+# test 19 PASSED (iteration 5)
+# test  0 PASSED (iteration 6)
+# test  1 PASSED (iteration 6)
+# test  2 PASSED (iteration 6)
+# test  3 PASSED (iteration 6)
+# test  4 PASSED (iteration 6)
+# test  5 PASSED (iteration 6)
+# test  6 PASSED (iteration 6)
+# test  7 PASSED (iteration 6)
+# test  8 PASSED (iteration 6)
+# test  9 PASSED (iteration 6)
+# test 10 PASSED (iteration 6)
+# test 11 PASSED (iteration 6)
+# test 12 PASSED (iteration 6)
+# test 13 PASSED (iteration 6)
+# test 14 PASSED (iteration 6)
+# test 15 PASSED (iteration 6)
+# test 16 PASSED (iteration 6)
+# test 17 PASSED (iteration 6)
+# test 18 PASSED (iteration 6)
+# test 19 PASSED (iteration 6)
+# test  0 PASSED (iteration 7)
+# test  1 PASSED (iteration 7)
+# test  2 PASSED (iteration 7)
+# test  3 PASSED (iteration 7)
+# test  4 PASSED (iteration 7)
+# test  5 PASSED (iteration 7)
+# test  6 PASSED (iteration 7)
+# test  7 PASSED (iteration 7)
+# test  8 PASSED (iteration 7)
+# test  9 PASSED (iteration 7)
+# test 10 PASSED (iteration 7)
+# test 11 PASSED (iteration 7)
+# test 12 PASSED (iteration 7)
+# test 13 PASSED (iteration 7)
+# test 14 PASSED (iteration 7)
+# test 15 PASSED (iteration 7)
+# test 16 PASSED (iteration 7)
+# test 17 PASSED (iteration 7)
+# test 18 PASSED (iteration 7)
+# test 19 PASSED (isubpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# teration 7)
+# test  0 PASSED (iteration 8)
+# test  1 PASSED (iteration 8)
+# test  2 PASSED (iteration 8)
+# test  3 PASSED (iteration 8)
+# test  4 PASSED (iteration 8)
+# test  5 PASSED (iteration 8)
+# test  6 PASSED (iteration 8)
+# test  7 PASSED (iteration 8)
+# test  8 PASSED (iteration 8)
+# test  9 PASSED (iteration 8)
+# test 10 PASSED (iteration 8)
+# test 11 PASSED (iteration 8)
+# test 12 PASSED (iteration 8)
+# test 13 PASSED (iteration 8)
+# test 14 PASSED (iteration 8)
+# test 15 PASSED (iteration 8)
+# test 16 PASSED (iteration 8)
+# test 17 PASSED (iteration 8)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# teration 7)
+# test  0 PASSED (iteration 8)
+# test  1 PASSED (iteration 8)
+# test  2 PASSED (iteration 8)
+# test  3 PASSED (iteration 8)
+# test  4 PASSED (iteration 8)
+# test  5 PASSED (iteration 8)
+# test  6 PASSED (iteration 8)
+# test  7 PASSED (iteration 8)
+# test  8 PASSED (iteration 8)
+# test  9 PASSED (iteration 8)
+# test 10 PASSED (iteration 8)
+# test 11 PASSED (iteration 8)
+# test 12 PASSED (iteration 8)
+# test 13 PASSED (iteration 8)
+# test 14 PASSED (iteration 8)
+# test 15 PASSED (iteration 8)
+# test 16 PASSED (iteration 8)
+# test 17 PASSED (iteration 8)
+# test 18 PASSED (iteration 8)
+# test 19 PASSED (iteration 8)
+# test  0 PASSED (iteration 9)
+# test  1 PASSED (iteration 9)
+# test  2 PASSED (iteration 9)
+# test  3 PASSED (iteration 9)
+# test  4 PASSED (iteration 9)
+# test  5 PASSED (iteration 9)
+# test  6 PASSED (iteration 9)
+# test  7 PASSED (iteration 9)
+# test  8 PASSED (iteration 9)
+# test  9 PASSED (iteration 9)
+# test 10 PASSED (iteration 9)
+# test 11 PASSED (iteration 9)
+# test 12 PASSED (iteration 9)
+# test 13 PASSED (iteration 9)
+# test 14 PASSED (iteration 9)
+# test 15 PASSED (iteration 9)
+# test 16 PASSED (iteration 9)
+# test 17 PASSED (iteration 9)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# teration 7)
+# test  0 PASSED (iteration 8)
+# test  1 PASSED (iteration 8)
+# test  2 PASSED (iteration 8)
+# test  3 PASSED (iteration 8)
+# test  4 PASSED (iteration 8)
+# test  5 PASSED (iteration 8)
+# test  6 PASSED (iteration 8)
+# test  7 PASSED (iteration 8)
+# test  8 PASSED (iteration 8)
+# test  9 PASSED (iteration 8)
+# test 10 PASSED (iteration 8)
+# test 11 PASSED (iteration 8)
+# test 12 PASSED (iteration 8)
+# test 13 PASSED (iteration 8)
+# test 14 PASSED (iteration 8)
+# test 15 PASSED (iteration 8)
+# test 16 PASSED (iteration 8)
+# test 17 PASSED (iteration 8)
+# test 18 PASSED (iteration 8)
+# test 19 PASSED (iteration 8)
+# test  0 PASSED (iteration 9)
+# test  1 PASSED (iteration 9)
+# test  2 PASSED (iteration 9)
+# test  3 PASSED (iteration 9)
+# test  4 PASSED (iteration 9)
+# test  5 PASSED (iteration 9)
+# test  6 PASSED (iteration 9)
+# test  7 PASSED (iteration 9)
+# test  8 PASSED (iteration 9)
+# test  9 PASSED (iteration 9)
+# test 10 PASSED (iteration 9)
+# test 11 PASSED (iteration 9)
+# test 12 PASSED (iteration 9)
+# test 13 PASSED (iteration 9)
+# test 14 PASSED (iteration 9)
+# test 15 PASSED (iteration 9)
+# test 16 PASSED (iteration 9)
+# test 17 PASSED (iteration 9)
+# test 18 PASSED (iteration 9)
+# test 19 PASSED (iteration 9)
+# test  0 PASSED (iteration 10)
+# test  1 PASSED (iteration 10)
+# test  2 PASSED (iteration 10)
+# test  3 PASSED (iteration 10)
+# test  4 PASSED (iteration 10)
+# test  5 PASSED (iteration 10)
+# test  6 PASSED (iteration 10)
+# test  7 PASSED (iteration 10)
+# test  8 PASSED (iteration 10)
+# test  9 PASSED (iteration 10)
+# test 10 PASSED (iteration 10)
+# test 11 PASSED (iteration 10)
+# test 12 PASSED (iteration 10)
+# test 13 PASSED (iteration 10)
+# test 14 PASSED (iteration 10)
+# test 15 PASSED (iteration 10)
+# test 16 PASSED (iteration 10)
+# test 17 PASSED (iteration 10)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# teration 7)
+# test  0 PASSED (iteration 8)
+# test  1 PASSED (iteration 8)
+# test  2 PASSED (iteration 8)
+# test  3 PASSED (iteration 8)
+# test  4 PASSED (iteration 8)
+# test  5 PASSED (iteration 8)
+# test  6 PASSED (iteration 8)
+# test  7 PASSED (iteration 8)
+# test  8 PASSED (iteration 8)
+# test  9 PASSED (iteration 8)
+# test 10 PASSED (iteration 8)
+# test 11 PASSED (iteration 8)
+# test 12 PASSED (iteration 8)
+# test 13 PASSED (iteration 8)
+# test 14 PASSED (iteration 8)
+# test 15 PASSED (iteration 8)
+# test 16 PASSED (iteration 8)
+# test 17 PASSED (iteration 8)
+# test 18 PASSED (iteration 8)
+# test 19 PASSED (iteration 8)
+# test  0 PASSED (iteration 9)
+# test  1 PASSED (iteration 9)
+# test  2 PASSED (iteration 9)
+# test  3 PASSED (iteration 9)
+# test  4 PASSED (iteration 9)
+# test  5 PASSED (iteration 9)
+# test  6 PASSED (iteration 9)
+# test  7 PASSED (iteration 9)
+# test  8 PASSED (iteration 9)
+# test  9 PASSED (iteration 9)
+# test 10 PASSED (iteration 9)
+# test 11 PASSED (iteration 9)
+# test 12 PASSED (iteration 9)
+# test 13 PASSED (iteration 9)
+# test 14 PASSED (iteration 9)
+# test 15 PASSED (iteration 9)
+# test 16 PASSED (iteration 9)
+# test 17 PASSED (iteration 9)
+# test 18 PASSED (iteration 9)
+# test 19 PASSED (iteration 9)
+# test  0 PASSED (iteration 10)
+# test  1 PASSED (iteration 10)
+# test  2 PASSED (iteration 10)
+# test  3 PASSED (iteration 10)
+# test  4 PASSED (iteration 10)
+# test  5 PASSED (iteration 10)
+# test  6 PASSED (iteration 10)
+# test  7 PASSED (iteration 10)
+# test  8 PASSED (iteration 10)
+# test  9 PASSED (iteration 10)
+# test 10 PASSED (iteration 10)
+# test 11 PASSED (iteration 10)
+# test 12 PASSED (iteration 10)
+# test 13 PASSED (iteration 10)
+# test 14 PASSED (iteration 10)
+# test 15 PASSED (iteration 10)
+# test 16 PASSED (iteration 10)
+# test 17 PASSED (iteration 10)
+# test 18 PASSED (iteration 10)
+# test 19 PASSED (iteration 10)
+# test  0 PASSED (iteration 11)
+# test  1 PASSED (iteration 11)
+# test  2 PASSED (iteration 11)
+# test  3 PASSED (iteration 11)
+# test  4 PASSED (iteration 11)
+# test  5 PASSED (iteration 11)
+# test  6 PASSED (iteration 11)
+# test  7 PASSED (iteration 11)
+# test  8 PASSED (iteration 11)
+# test  9 PASSED (iteration 11)
+# test 10 PASSED (iteration 11)
+# test 11 PASSED (iteration 11)
+# test 12 PASSED (iteration 11)
+# test 13 PASSED (iteration 11)
+# test 14 PASSED (iteration 11)
+# test 15 PASSED (iteration 11)
+# test 16 PASSED (iteration 11)
+# test 17 PASSED (iteration 11)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# teration 7)
+# test  0 PASSED (iteration 8)
+# test  1 PASSED (iteration 8)
+# test  2 PASSED (iteration 8)
+# test  3 PASSED (iteration 8)
+# test  4 PASSED (iteration 8)
+# test  5 PASSED (iteration 8)
+# test  6 PASSED (iteration 8)
+# test  7 PASSED (iteration 8)
+# test  8 PASSED (iteration 8)
+# test  9 PASSED (iteration 8)
+# test 10 PASSED (iteration 8)
+# test 11 PASSED (iteration 8)
+# test 12 PASSED (iteration 8)
+# test 13 PASSED (iteration 8)
+# test 14 PASSED (iteration 8)
+# test 15 PASSED (iteration 8)
+# test 16 PASSED (iteration 8)
+# test 17 PASSED (iteration 8)
+# test 18 PASSED (iteration 8)
+# test 19 PASSED (iteration 8)
+# test  0 PASSED (iteration 9)
+# test  1 PASSED (iteration 9)
+# test  2 PASSED (iteration 9)
+# test  3 PASSED (iteration 9)
+# test  4 PASSED (iteration 9)
+# test  5 PASSED (iteration 9)
+# test  6 PASSED (iteration 9)
+# test  7 PASSED (iteration 9)
+# test  8 PASSED (iteration 9)
+# test  9 PASSED (iteration 9)
+# test 10 PASSED (iteration 9)
+# test 11 PASSED (iteration 9)
+# test 12 PASSED (iteration 9)
+# test 13 PASSED (iteration 9)
+# test 14 PASSED (iteration 9)
+# test 15 PASSED (iteration 9)
+# test 16 PASSED (iteration 9)
+# test 17 PASSED (iteration 9)
+# test 18 PASSED (iteration 9)
+# test 19 PASSED (iteration 9)
+# test  0 PASSED (iteration 10)
+# test  1 PASSED (iteration 10)
+# test  2 PASSED (iteration 10)
+# test  3 PASSED (iteration 10)
+# test  4 PASSED (iteration 10)
+# test  5 PASSED (iteration 10)
+# test  6 PASSED (iteration 10)
+# test  7 PASSED (iteration 10)
+# test  8 PASSED (iteration 10)
+# test  9 PASSED (iteration 10)
+# test 10 PASSED (iteration 10)
+# test 11 PASSED (iteration 10)
+# test 12 PASSED (iteration 10)
+# test 13 PASSED (iteration 10)
+# test 14 PASSED (iteration 10)
+# test 15 PASSED (iteration 10)
+# test 16 PASSED (iteration 10)
+# test 17 PASSED (iteration 10)
+# test 18 PASSED (iteration 10)
+# test 19 PASSED (iteration 10)
+# test  0 PASSED (iteration 11)
+# test  1 PASSED (iteration 11)
+# test  2 PASSED (iteration 11)
+# test  3 PASSED (iteration 11)
+# test  4 PASSED (iteration 11)
+# test  5 PASSED (iteration 11)
+# test  6 PASSED (iteration 11)
+# test  7 PASSED (iteration 11)
+# test  8 PASSED (iteration 11)
+# test  9 PASSED (iteration 11)
+# test 10 PASSED (iteration 11)
+# test 11 PASSED (iteration 11)
+# test 12 PASSED (iteration 11)
+# test 13 PASSED (iteration 11)
+# test 14 PASSED (iteration 11)
+# test 15 PASSED (iteration 11)
+# test 16 PASSED (iteration 11)
+# test 17 PASSED (iteration 11)
+# test 18 PASSED (iteration 11)
+# test 19 PASSED (iteration 11)
+# test  0 PASSED (iteration 12)
+# test  1 PASSED (iteration 12)
+# test  2 PASSED (iteration 12)
+# test  3 PASSED (iteration 12)
+# test  4 PASSED (iteration 12)
+# test  5 PASSED (iteration 12)
+# test  6 PASSED (iteration 12)
+# test  7 PASSED (iteration 12)
+# test  8 PASSED (iteration 12)
+# test  9 PASSED (iteration 12)
+# test 10 PASSED (iteration 12)
+# test 11 PASSED (iteration 12)
+# test 12 PASSED (iteration 12)
+# test 13 PASSED (iteration 12)
+# test 14 PASSED (iteration 12)
+# test 15 PASSED (iteration 12)
+# test 16 PASSED (iteration 12)
+# test 17 PASSED (iteration 12)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# teration 7)
+# test  0 PASSED (iteration 8)
+# test  1 PASSED (iteration 8)
+# test  2 PASSED (iteration 8)
+# test  3 PASSED (iteration 8)
+# test  4 PASSED (iteration 8)
+# test  5 PASSED (iteration 8)
+# test  6 PASSED (iteration 8)
+# test  7 PASSED (iteration 8)
+# test  8 PASSED (iteration 8)
+# test  9 PASSED (iteration 8)
+# test 10 PASSED (iteration 8)
+# test 11 PASSED (iteration 8)
+# test 12 PASSED (iteration 8)
+# test 13 PASSED (iteration 8)
+# test 14 PASSED (iteration 8)
+# test 15 PASSED (iteration 8)
+# test 16 PASSED (iteration 8)
+# test 17 PASSED (iteration 8)
+# test 18 PASSED (iteration 8)
+# test 19 PASSED (iteration 8)
+# test  0 PASSED (iteration 9)
+# test  1 PASSED (iteration 9)
+# test  2 PASSED (iteration 9)
+# test  3 PASSED (iteration 9)
+# test  4 PASSED (iteration 9)
+# test  5 PASSED (iteration 9)
+# test  6 PASSED (iteration 9)
+# test  7 PASSED (iteration 9)
+# test  8 PASSED (iteration 9)
+# test  9 PASSED (iteration 9)
+# test 10 PASSED (iteration 9)
+# test 11 PASSED (iteration 9)
+# test 12 PASSED (iteration 9)
+# test 13 PASSED (iteration 9)
+# test 14 PASSED (iteration 9)
+# test 15 PASSED (iteration 9)
+# test 16 PASSED (iteration 9)
+# test 17 PASSED (iteration 9)
+# test 18 PASSED (iteration 9)
+# test 19 PASSED (iteration 9)
+# test  0 PASSED (iteration 10)
+# test  1 PASSED (iteration 10)
+# test  2 PASSED (iteration 10)
+# test  3 PASSED (iteration 10)
+# test  4 PASSED (iteration 10)
+# test  5 PASSED (iteration 10)
+# test  6 PASSED (iteration 10)
+# test  7 PASSED (iteration 10)
+# test  8 PASSED (iteration 10)
+# test  9 PASSED (iteration 10)
+# test 10 PASSED (iteration 10)
+# test 11 PASSED (iteration 10)
+# test 12 PASSED (iteration 10)
+# test 13 PASSED (iteration 10)
+# test 14 PASSED (iteration 10)
+# test 15 PASSED (iteration 10)
+# test 16 PASSED (iteration 10)
+# test 17 PASSED (iteration 10)
+# test 18 PASSED (iteration 10)
+# test 19 PASSED (iteration 10)
+# test  0 PASSED (iteration 11)
+# test  1 PASSED (iteration 11)
+# test  2 PASSED (iteration 11)
+# test  3 PASSED (iteration 11)
+# test  4 PASSED (iteration 11)
+# test  5 PASSED (iteration 11)
+# test  6 PASSED (iteration 11)
+# test  7 PASSED (iteration 11)
+# test  8 PASSED (iteration 11)
+# test  9 PASSED (iteration 11)
+# test 10 PASSED (iteration 11)
+# test 11 PASSED (iteration 11)
+# test 12 PASSED (iteration 11)
+# test 13 PASSED (iteration 11)
+# test 14 PASSED (iteration 11)
+# test 15 PASSED (iteration 11)
+# test 16 PASSED (iteration 11)
+# test 17 PASSED (iteration 11)
+# test 18 PASSED (iteration 11)
+# test 19 PASSED (iteration 11)
+# test  0 PASSED (iteration 12)
+# test  1 PASSED (iteration 12)
+# test  2 PASSED (iteration 12)
+# test  3 PASSED (iteration 12)
+# test  4 PASSED (iteration 12)
+# test  5 PASSED (iteration 12)
+# test  6 PASSED (iteration 12)
+# test  7 PASSED (iteration 12)
+# test  8 PASSED (iteration 12)
+# test  9 PASSED (iteration 12)
+# test 10 PASSED (iteration 12)
+# test 11 PASSED (iteration 12)
+# test 12 PASSED (iteration 12)
+# test 13 PASSED (iteration 12)
+# test 14 PASSED (iteration 12)
+# test 15 PASSED (iteration 12)
+# test 16 PASSED (iteration 12)
+# test 17 PASSED (iteration 12)
+# test 18 PASSED (iteration 12)
+# test 19 PASSED (iteration 12)
+# test  0 PASSED (iteration 13)
+# test  1 PASSED (iteration 13)
+# test  2 PASSED (iteration 13)
+# test  3 PASSED (iteration 13)
+# test  4 PASSED (iteration 13)
+# test  5 PASSED (iteration 13)
+# test  6 PASSED (iteration 13)
+# test  7 PASSED (iteration 13)
+# test  8 PASSED (iteration 13)
+# test  9 PASSED (iteration 13)
+# test 10 PASSED (iteration 13)
+# test 11 PASSED (iteration 13)
+# test 12 PASSED (iteration 13)
+# test 13 PASSED (iteration 13)
+# test 14 PASSED (iteration 13)
+# test 15 PASSED (iteration 13)
+# test 16 PASSED (iteration 13)
+# test 17 PASSED (iteration 13)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# teration 7)
+# test  0 PASSED (iteration 8)
+# test  1 PASSED (iteration 8)
+# test  2 PASSED (iteration 8)
+# test  3 PASSED (iteration 8)
+# test  4 PASSED (iteration 8)
+# test  5 PASSED (iteration 8)
+# test  6 PASSED (iteration 8)
+# test  7 PASSED (iteration 8)
+# test  8 PASSED (iteration 8)
+# test  9 PASSED (iteration 8)
+# test 10 PASSED (iteration 8)
+# test 11 PASSED (iteration 8)
+# test 12 PASSED (iteration 8)
+# test 13 PASSED (iteration 8)
+# test 14 PASSED (iteration 8)
+# test 15 PASSED (iteration 8)
+# test 16 PASSED (iteration 8)
+# test 17 PASSED (iteration 8)
+# test 18 PASSED (iteration 8)
+# test 19 PASSED (iteration 8)
+# test  0 PASSED (iteration 9)
+# test  1 PASSED (iteration 9)
+# test  2 PASSED (iteration 9)
+# test  3 PASSED (iteration 9)
+# test  4 PASSED (iteration 9)
+# test  5 PASSED (iteration 9)
+# test  6 PASSED (iteration 9)
+# test  7 PASSED (iteration 9)
+# test  8 PASSED (iteration 9)
+# test  9 PASSED (iteration 9)
+# test 10 PASSED (iteration 9)
+# test 11 PASSED (iteration 9)
+# test 12 PASSED (iteration 9)
+# test 13 PASSED (iteration 9)
+# test 14 PASSED (iteration 9)
+# test 15 PASSED (iteration 9)
+# test 16 PASSED (iteration 9)
+# test 17 PASSED (iteration 9)
+# test 18 PASSED (iteration 9)
+# test 19 PASSED (iteration 9)
+# test  0 PASSED (iteration 10)
+# test  1 PASSED (iteration 10)
+# test  2 PASSED (iteration 10)
+# test  3 PASSED (iteration 10)
+# test  4 PASSED (iteration 10)
+# test  5 PASSED (iteration 10)
+# test  6 PASSED (iteration 10)
+# test  7 PASSED (iteration 10)
+# test  8 PASSED (iteration 10)
+# test  9 PASSED (iteration 10)
+# test 10 PASSED (iteration 10)
+# test 11 PASSED (iteration 10)
+# test 12 PASSED (iteration 10)
+# test 13 PASSED (iteration 10)
+# test 14 PASSED (iteration 10)
+# test 15 PASSED (iteration 10)
+# test 16 PASSED (iteration 10)
+# test 17 PASSED (iteration 10)
+# test 18 PASSED (iteration 10)
+# test 19 PASSED (iteration 10)
+# test  0 PASSED (iteration 11)
+# test  1 PASSED (iteration 11)
+# test  2 PASSED (iteration 11)
+# test  3 PASSED (iteration 11)
+# test  4 PASSED (iteration 11)
+# test  5 PASSED (iteration 11)
+# test  6 PASSED (iteration 11)
+# test  7 PASSED (iteration 11)
+# test  8 PASSED (iteration 11)
+# test  9 PASSED (iteration 11)
+# test 10 PASSED (iteration 11)
+# test 11 PASSED (iteration 11)
+# test 12 PASSED (iteration 11)
+# test 13 PASSED (iteration 11)
+# test 14 PASSED (iteration 11)
+# test 15 PASSED (iteration 11)
+# test 16 PASSED (iteration 11)
+# test 17 PASSED (iteration 11)
+# test 18 PASSED (iteration 11)
+# test 19 PASSED (iteration 11)
+# test  0 PASSED (iteration 12)
+# test  1 PASSED (iteration 12)
+# test  2 PASSED (iteration 12)
+# test  3 PASSED (iteration 12)
+# test  4 PASSED (iteration 12)
+# test  5 PASSED (iteration 12)
+# test  6 PASSED (iteration 12)
+# test  7 PASSED (iteration 12)
+# test  8 PASSED (iteration 12)
+# test  9 PASSED (iteration 12)
+# test 10 PASSED (iteration 12)
+# test 11 PASSED (iteration 12)
+# test 12 PASSED (iteration 12)
+# test 13 PASSED (iteration 12)
+# test 14 PASSED (iteration 12)
+# test 15 PASSED (iteration 12)
+# test 16 PASSED (iteration 12)
+# test 17 PASSED (iteration 12)
+# test 18 PASSED (iteration 12)
+# test 19 PASSED (iteration 12)
+# test  0 PASSED (iteration 13)
+# test  1 PASSED (iteration 13)
+# test  2 PASSED (iteration 13)
+# test  3 PASSED (iteration 13)
+# test  4 PASSED (iteration 13)
+# test  5 PASSED (iteration 13)
+# test  6 PASSED (iteration 13)
+# test  7 PASSED (iteration 13)
+# test  8 PASSED (iteration 13)
+# test  9 PASSED (iteration 13)
+# test 10 PASSED (iteration 13)
+# test 11 PASSED (iteration 13)
+# test 12 PASSED (iteration 13)
+# test 13 PASSED (iteration 13)
+# test 14 PASSED (iteration 13)
+# test 15 PASSED (iteration 13)
+# test 16 PASSED (iteration 13)
+# test 17 PASSED (iteration 13)
+# test 18 PASSED (iteration 13)
+# test 19 PASSED (iteration 13)
+# test  0 PASSED (iteration 14)
+# test  1 PASSED (iteration 14)
+# test  2 PASSED (iteration 14)
+# test  3 PASSED (iteration 14)
+# test  4 PASSED (iteration 14)
+# test  5 PASSED (iteration 14)
+# test  6 PASSED (iteration 14)
+# test  7 PASSED (iteration 14)
+# test  8 PASSED (iteration 14)
+# test  9 PASSED (iteration 14)
+# test 10 PASSED (iteration 14)
+# test 11 PASSED (iteration 14)
+# test 12 PASSED (iteration 14)
+# test 13 PASSED (iteration 14)
+# test 14 PASSED (iteration 14)
+# test 15 PASSED (iteration 14)
+# test 16 PASSED (iteration 14)
+# test 17 PASSED (iteration 14)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+#  (iteration 14)
+# test 18 PASSED (iteration 14)
+# test 19 PASSED (iteration 14)
+# test  0 PASSED (iteration 15)
+# test  1 PASSED (iteration 15)
+# test  2 PASSED (iteration 15)
+# test  3 PASSED (iteration 15)
+# test  4 PASSED (iteration 15)
+# test  5 PASSED (iteration 15)
+# test  6 PASSED (iteration 15)
+# test  7 PASSED (iteration 15)
+# test  8 PASSED (iteration 15)
+# test  9 PASSED (iteration 15)
+# test 10 PASSED (iteration 15)
+# test 11 PASSED (iteration 15)
+# test 12 PASSED (iteration 15)
+# test 13 PASSED (iteration 15)
+# test 14 PASSED (iteration 15)
+# test 15 PASSED (iteration 15)
+# test 16 PASSED (iteration 15)
+# test 17 PASSED (iteration 15)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+#  (iteration 14)
+# test 18 PASSED (iteration 14)
+# test 19 PASSED (iteration 14)
+# test  0 PASSED (iteration 15)
+# test  1 PASSED (iteration 15)
+# test  2 PASSED (iteration 15)
+# test  3 PASSED (iteration 15)
+# test  4 PASSED (iteration 15)
+# test  5 PASSED (iteration 15)
+# test  6 PASSED (iteration 15)
+# test  7 PASSED (iteration 15)
+# test  8 PASSED (iteration 15)
+# test  9 PASSED (iteration 15)
+# test 10 PASSED (iteration 15)
+# test 11 PASSED (iteration 15)
+# test 12 PASSED (iteration 15)
+# test 13 PASSED (iteration 15)
+# test 14 PASSED (iteration 15)
+# test 15 PASSED (iteration 15)
+# test 16 PASSED (iteration 15)
+# test 17 PASSED (iteration 15)
+# test 18 PASSED (iteration 15)
+# test 19 PASSED (iteration 15)
+# test  0 PASSED (iteration 16)
+# test  1 PASSED (iteration 16)
+# test  2 PASSED (iteration 16)
+# test  3 PASSED (iteration 16)
+# test  4 PASSED (iteration 16)
+# test  5 PASSED (iteration 16)
+# test  6 PASSED (iteration 16)
+# test  7 PASSED (iteration 16)
+# test  8 PASSED (iteration 16)
+# test  9 PASSED (iteration 16)
+# test 10 PASSED (iteration 16)
+# test 11 PASSED (iteration 16)
+# test 12 PASSED (iteration 16)
+# test 13 PASSED (iteration 16)
+# test 14 PASSED (iteration 16)
+# test 15 PASSED (iteration 16)
+# test 16 PASSED (iteration 16)
+# test 17 PASSED (iteration 16)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+#  (iteration 14)
+# test 18 PASSED (iteration 14)
+# test 19 PASSED (iteration 14)
+# test  0 PASSED (iteration 15)
+# test  1 PASSED (iteration 15)
+# test  2 PASSED (iteration 15)
+# test  3 PASSED (iteration 15)
+# test  4 PASSED (iteration 15)
+# test  5 PASSED (iteration 15)
+# test  6 PASSED (iteration 15)
+# test  7 PASSED (iteration 15)
+# test  8 PASSED (iteration 15)
+# test  9 PASSED (iteration 15)
+# test 10 PASSED (iteration 15)
+# test 11 PASSED (iteration 15)
+# test 12 PASSED (iteration 15)
+# test 13 PASSED (iteration 15)
+# test 14 PASSED (iteration 15)
+# test 15 PASSED (iteration 15)
+# test 16 PASSED (iteration 15)
+# test 17 PASSED (iteration 15)
+# test 18 PASSED (iteration 15)
+# test 19 PASSED (iteration 15)
+# test  0 PASSED (iteration 16)
+# test  1 PASSED (iteration 16)
+# test  2 PASSED (iteration 16)
+# test  3 PASSED (iteration 16)
+# test  4 PASSED (iteration 16)
+# test  5 PASSED (iteration 16)
+# test  6 PASSED (iteration 16)
+# test  7 PASSED (iteration 16)
+# test  8 PASSED (iteration 16)
+# test  9 PASSED (iteration 16)
+# test 10 PASSED (iteration 16)
+# test 11 PASSED (iteration 16)
+# test 12 PASSED (iteration 16)
+# test 13 PASSED (iteration 16)
+# test 14 PASSED (iteration 16)
+# test 15 PASSED (iteration 16)
+# test 16 PASSED (iteration 16)
+# test 17 PASSED (iteration 16)
+# test 18 PASSED (iteration 16)
+# test 19 PASSED (iteration 16)
+# test  0 PASSED (iteration 17)
+# test  1 PASSED (iteration 17)
+# test  2 PASSED (iteration 17)
+# test  3 PASSED (iteration 17)
+# test  4 PASSED (iteration 17)
+# test  5 PASSED (iteration 17)
+# test  6 PASSED (iteration 17)
+# test  7 PASSED (iteration 17)
+# test  8 PASSED (iteration 17)
+# test  9 PASSED (iteration 17)
+# test 10 PASSED (iteration 17)
+# test 11 PASSED (iteration 17)
+# test 12 PASSED (iteration 17)
+# test 13 PASSED (iteration 17)
+# test 14 PASSED (iteration 17)
+# test 15 PASSED (iteration 17)
+# test 16 PASSED (iteration 17)
+# test 17 PASSED (iteration 17)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+#  (iteration 14)
+# test 18 PASSED (iteration 14)
+# test 19 PASSED (iteration 14)
+# test  0 PASSED (iteration 15)
+# test  1 PASSED (iteration 15)
+# test  2 PASSED (iteration 15)
+# test  3 PASSED (iteration 15)
+# test  4 PASSED (iteration 15)
+# test  5 PASSED (iteration 15)
+# test  6 PASSED (iteration 15)
+# test  7 PASSED (iteration 15)
+# test  8 PASSED (iteration 15)
+# test  9 PASSED (iteration 15)
+# test 10 PASSED (iteration 15)
+# test 11 PASSED (iteration 15)
+# test 12 PASSED (iteration 15)
+# test 13 PASSED (iteration 15)
+# test 14 PASSED (iteration 15)
+# test 15 PASSED (iteration 15)
+# test 16 PASSED (iteration 15)
+# test 17 PASSED (iteration 15)
+# test 18 PASSED (iteration 15)
+# test 19 PASSED (iteration 15)
+# test  0 PASSED (iteration 16)
+# test  1 PASSED (iteration 16)
+# test  2 PASSED (iteration 16)
+# test  3 PASSED (iteration 16)
+# test  4 PASSED (iteration 16)
+# test  5 PASSED (iteration 16)
+# test  6 PASSED (iteration 16)
+# test  7 PASSED (iteration 16)
+# test  8 PASSED (iteration 16)
+# test  9 PASSED (iteration 16)
+# test 10 PASSED (iteration 16)
+# test 11 PASSED (iteration 16)
+# test 12 PASSED (iteration 16)
+# test 13 PASSED (iteration 16)
+# test 14 PASSED (iteration 16)
+# test 15 PASSED (iteration 16)
+# test 16 PASSED (iteration 16)
+# test 17 PASSED (iteration 16)
+# test 18 PASSED (iteration 16)
+# test 19 PASSED (iteration 16)
+# test  0 PASSED (iteration 17)
+# test  1 PASSED (iteration 17)
+# test  2 PASSED (iteration 17)
+# test  3 PASSED (iteration 17)
+# test  4 PASSED (iteration 17)
+# test  5 PASSED (iteration 17)
+# test  6 PASSED (iteration 17)
+# test  7 PASSED (iteration 17)
+# test  8 PASSED (iteration 17)
+# test  9 PASSED (iteration 17)
+# test 10 PASSED (iteration 17)
+# test 11 PASSED (iteration 17)
+# test 12 PASSED (iteration 17)
+# test 13 PASSED (iteration 17)
+# test 14 PASSED (iteration 17)
+# test 15 PASSED (iteration 17)
+# test 16 PASSED (iteration 17)
+# test 17 PASSED (iteration 17)
+# test 18 PASSED (iteration 17)
+# test 19 PASSED (iteration 17)
+# test  0 PASSED (iteration 18)
+# test  1 PASSED (iteration 18)
+# test  2 PASSED (iteration 18)
+# test  3 PASSED (iteration 18)
+# test  4 PASSED (iteration 18)
+# test  5 PASSED (iteration 18)
+# test  6 PASSED (iteration 18)
+# test  7 PASSED (iteration 18)
+# test  8 PASSED (iteration 18)
+# test  9 PASSED (iteration 18)
+# test 10 PASSED (iteration 18)
+# test 11 PASSED (iteration 18)
+# test 12 PASSED (iteration 18)
+# test 13 PASSED (iteration 18)
+# test 14 PASSED (iteration 18)
+# test 15 PASSED (iteration 18)
+# test 16 PASSED (iteration 18)
+# test 17 PASSED (iteration 18)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+#  (iteration 14)
+# test 18 PASSED (iteration 14)
+# test 19 PASSED (iteration 14)
+# test  0 PASSED (iteration 15)
+# test  1 PASSED (iteration 15)
+# test  2 PASSED (iteration 15)
+# test  3 PASSED (iteration 15)
+# test  4 PASSED (iteration 15)
+# test  5 PASSED (iteration 15)
+# test  6 PASSED (iteration 15)
+# test  7 PASSED (iteration 15)
+# test  8 PASSED (iteration 15)
+# test  9 PASSED (iteration 15)
+# test 10 PASSED (iteration 15)
+# test 11 PASSED (iteration 15)
+# test 12 PASSED (iteration 15)
+# test 13 PASSED (iteration 15)
+# test 14 PASSED (iteration 15)
+# test 15 PASSED (iteration 15)
+# test 16 PASSED (iteration 15)
+# test 17 PASSED (iteration 15)
+# test 18 PASSED (iteration 15)
+# test 19 PASSED (iteration 15)
+# test  0 PASSED (iteration 16)
+# test  1 PASSED (iteration 16)
+# test  2 PASSED (iteration 16)
+# test  3 PASSED (iteration 16)
+# test  4 PASSED (iteration 16)
+# test  5 PASSED (iteration 16)
+# test  6 PASSED (iteration 16)
+# test  7 PASSED (iteration 16)
+# test  8 PASSED (iteration 16)
+# test  9 PASSED (iteration 16)
+# test 10 PASSED (iteration 16)
+# test 11 PASSED (iteration 16)
+# test 12 PASSED (iteration 16)
+# test 13 PASSED (iteration 16)
+# test 14 PASSED (iteration 16)
+# test 15 PASSED (iteration 16)
+# test 16 PASSED (iteration 16)
+# test 17 PASSED (iteration 16)
+# test 18 PASSED (iteration 16)
+# test 19 PASSED (iteration 16)
+# test  0 PASSED (iteration 17)
+# test  1 PASSED (iteration 17)
+# test  2 PASSED (iteration 17)
+# test  3 PASSED (iteration 17)
+# test  4 PASSED (iteration 17)
+# test  5 PASSED (iteration 17)
+# test  6 PASSED (iteration 17)
+# test  7 PASSED (iteration 17)
+# test  8 PASSED (iteration 17)
+# test  9 PASSED (iteration 17)
+# test 10 PASSED (iteration 17)
+# test 11 PASSED (iteration 17)
+# test 12 PASSED (iteration 17)
+# test 13 PASSED (iteration 17)
+# test 14 PASSED (iteration 17)
+# test 15 PASSED (iteration 17)
+# test 16 PASSED (iteration 17)
+# test 17 PASSED (iteration 17)
+# test 18 PASSED (iteration 17)
+# test 19 PASSED (iteration 17)
+# test  0 PASSED (iteration 18)
+# test  1 PASSED (iteration 18)
+# test  2 PASSED (iteration 18)
+# test  3 PASSED (iteration 18)
+# test  4 PASSED (iteration 18)
+# test  5 PASSED (iteration 18)
+# test  6 PASSED (iteration 18)
+# test  7 PASSED (iteration 18)
+# test  8 PASSED (iteration 18)
+# test  9 PASSED (iteration 18)
+# test 10 PASSED (iteration 18)
+# test 11 PASSED (iteration 18)
+# test 12 PASSED (iteration 18)
+# test 13 PASSED (iteration 18)
+# test 14 PASSED (iteration 18)
+# test 15 PASSED (iteration 18)
+# test 16 PASSED (iteration 18)
+# test 17 PASSED (iteration 18)
+# test 18 PASSED (iteration 18)
+# test 19 PASSED (iteration 18)
+# test  0 PASSED (iteration 19)
+# test  1 PASSED (iteration 19)
+# test  2 PASSED (iteration 19)
+# test  3 PASSED (iteration 19)
+# test  4 PASSED (iteration 19)
+# test  5 PASSED (iteration 19)
+# test  6 PASSED (iteration 19)
+# test  7 PASSED (iteration 19)
+# test  8 PASSED (iteration 19)
+# test  9 PASSED (iteration 19)
+# test 10 PASSED (iteration 19)
+# test 11 PASSED (iteration 19)
+# test 12 PASSED (iteration 19)
+# test 13 PASSED (iteration 19)
+# test 14 PASSED (iteration 19)
+# test 15 PASSED (iteration 19)
+# test 16 PASSED (iteration 19)
+# test 17 PASSED (iteration 19)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+#  (iteration 14)
+# test 18 PASSED (iteration 14)
+# test 19 PASSED (iteration 14)
+# test  0 PASSED (iteration 15)
+# test  1 PASSED (iteration 15)
+# test  2 PASSED (iteration 15)
+# test  3 PASSED (iteration 15)
+# test  4 PASSED (iteration 15)
+# test  5 PASSED (iteration 15)
+# test  6 PASSED (iteration 15)
+# test  7 PASSED (iteration 15)
+# test  8 PASSED (iteration 15)
+# test  9 PASSED (iteration 15)
+# test 10 PASSED (iteration 15)
+# test 11 PASSED (iteration 15)
+# test 12 PASSED (iteration 15)
+# test 13 PASSED (iteration 15)
+# test 14 PASSED (iteration 15)
+# test 15 PASSED (iteration 15)
+# test 16 PASSED (iteration 15)
+# test 17 PASSED (iteration 15)
+# test 18 PASSED (iteration 15)
+# test 19 PASSED (iteration 15)
+# test  0 PASSED (iteration 16)
+# test  1 PASSED (iteration 16)
+# test  2 PASSED (iteration 16)
+# test  3 PASSED (iteration 16)
+# test  4 PASSED (iteration 16)
+# test  5 PASSED (iteration 16)
+# test  6 PASSED (iteration 16)
+# test  7 PASSED (iteration 16)
+# test  8 PASSED (iteration 16)
+# test  9 PASSED (iteration 16)
+# test 10 PASSED (iteration 16)
+# test 11 PASSED (iteration 16)
+# test 12 PASSED (iteration 16)
+# test 13 PASSED (iteration 16)
+# test 14 PASSED (iteration 16)
+# test 15 PASSED (iteration 16)
+# test 16 PASSED (iteration 16)
+# test 17 PASSED (iteration 16)
+# test 18 PASSED (iteration 16)
+# test 19 PASSED (iteration 16)
+# test  0 PASSED (iteration 17)
+# test  1 PASSED (iteration 17)
+# test  2 PASSED (iteration 17)
+# test  3 PASSED (iteration 17)
+# test  4 PASSED (iteration 17)
+# test  5 PASSED (iteration 17)
+# test  6 PASSED (iteration 17)
+# test  7 PASSED (iteration 17)
+# test  8 PASSED (iteration 17)
+# test  9 PASSED (iteration 17)
+# test 10 PASSED (iteration 17)
+# test 11 PASSED (iteration 17)
+# test 12 PASSED (iteration 17)
+# test 13 PASSED (iteration 17)
+# test 14 PASSED (iteration 17)
+# test 15 PASSED (iteration 17)
+# test 16 PASSED (iteration 17)
+# test 17 PASSED (iteration 17)
+# test 18 PASSED (iteration 17)
+# test 19 PASSED (iteration 17)
+# test  0 PASSED (iteration 18)
+# test  1 PASSED (iteration 18)
+# test  2 PASSED (iteration 18)
+# test  3 PASSED (iteration 18)
+# test  4 PASSED (iteration 18)
+# test  5 PASSED (iteration 18)
+# test  6 PASSED (iteration 18)
+# test  7 PASSED (iteration 18)
+# test  8 PASSED (iteration 18)
+# test  9 PASSED (iteration 18)
+# test 10 PASSED (iteration 18)
+# test 11 PASSED (iteration 18)
+# test 12 PASSED (iteration 18)
+# test 13 PASSED (iteration 18)
+# test 14 PASSED (iteration 18)
+# test 15 PASSED (iteration 18)
+# test 16 PASSED (iteration 18)
+# test 17 PASSED (iteration 18)
+# test 18 PASSED (iteration 18)
+# test 19 PASSED (iteration 18)
+# test  0 PASSED (iteration 19)
+# test  1 PASSED (iteration 19)
+# test  2 PASSED (iteration 19)
+# test  3 PASSED (iteration 19)
+# test  4 PASSED (iteration 19)
+# test  5 PASSED (iteration 19)
+# test  6 PASSED (iteration 19)
+# test  7 PASSED (iteration 19)
+# test  8 PASSED (iteration 19)
+# test  9 PASSED (iteration 19)
+# test 10 PASSED (iteration 19)
+# test 11 PASSED (iteration 19)
+# test 12 PASSED (iteration 19)
+# test 13 PASSED (iteration 19)
+# test 14 PASSED (iteration 19)
+# test 15 PASSED (iteration 19)
+# test 16 PASSED (iteration 19)
+# test 17 PASSED (iteration 19)
+# test 18 PASSED (iteration 19)
+# test 19 PASSED (iteration 19)
+# test  0 PASSED (iteration 20)
+# test  1 PASSED (iteration 20)
+# test  2 PASSED (iteration 20)
+# test  3 PASSED (iteration 20)
+# test  4 PASSED (iteration 20)
+# test  5 PASSED (iteration 20)
+# test  6 PASSED (iteration 20)
+# test  7 PASSED (iteration 20)
+# test  8 PASSED (iteration 20)
+# test  9 PASSED (iteration 20)
+# test 10 PASSED (iteration 20)
+# test 11 PASSED (iteration 20)
+# test 12 PASSED (iteration 20)
+# test 13 PASSED (iteration 20)
+# test 14 PASSED (iteration 20)
+# test 15 PASSED (iteration 20)
+# test 16 PASSED (iteration 20)
+# test 17 PASSED (iteration 20)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+#  (iteration 14)
+# test 18 PASSED (iteration 14)
+# test 19 PASSED (iteration 14)
+# test  0 PASSED (iteration 15)
+# test  1 PASSED (iteration 15)
+# test  2 PASSED (iteration 15)
+# test  3 PASSED (iteration 15)
+# test  4 PASSED (iteration 15)
+# test  5 PASSED (iteration 15)
+# test  6 PASSED (iteration 15)
+# test  7 PASSED (iteration 15)
+# test  8 PASSED (iteration 15)
+# test  9 PASSED (iteration 15)
+# test 10 PASSED (iteration 15)
+# test 11 PASSED (iteration 15)
+# test 12 PASSED (iteration 15)
+# test 13 PASSED (iteration 15)
+# test 14 PASSED (iteration 15)
+# test 15 PASSED (iteration 15)
+# test 16 PASSED (iteration 15)
+# test 17 PASSED (iteration 15)
+# test 18 PASSED (iteration 15)
+# test 19 PASSED (iteration 15)
+# test  0 PASSED (iteration 16)
+# test  1 PASSED (iteration 16)
+# test  2 PASSED (iteration 16)
+# test  3 PASSED (iteration 16)
+# test  4 PASSED (iteration 16)
+# test  5 PASSED (iteration 16)
+# test  6 PASSED (iteration 16)
+# test  7 PASSED (iteration 16)
+# test  8 PASSED (iteration 16)
+# test  9 PASSED (iteration 16)
+# test 10 PASSED (iteration 16)
+# test 11 PASSED (iteration 16)
+# test 12 PASSED (iteration 16)
+# test 13 PASSED (iteration 16)
+# test 14 PASSED (iteration 16)
+# test 15 PASSED (iteration 16)
+# test 16 PASSED (iteration 16)
+# test 17 PASSED (iteration 16)
+# test 18 PASSED (iteration 16)
+# test 19 PASSED (iteration 16)
+# test  0 PASSED (iteration 17)
+# test  1 PASSED (iteration 17)
+# test  2 PASSED (iteration 17)
+# test  3 PASSED (iteration 17)
+# test  4 PASSED (iteration 17)
+# test  5 PASSED (iteration 17)
+# test  6 PASSED (iteration 17)
+# test  7 PASSED (iteration 17)
+# test  8 PASSED (iteration 17)
+# test  9 PASSED (iteration 17)
+# test 10 PASSED (iteration 17)
+# test 11 PASSED (iteration 17)
+# test 12 PASSED (iteration 17)
+# test 13 PASSED (iteration 17)
+# test 14 PASSED (iteration 17)
+# test 15 PASSED (iteration 17)
+# test 16 PASSED (iteration 17)
+# test 17 PASSED (iteration 17)
+# test 18 PASSED (iteration 17)
+# test 19 PASSED (iteration 17)
+# test  0 PASSED (iteration 18)
+# test  1 PASSED (iteration 18)
+# test  2 PASSED (iteration 18)
+# test  3 PASSED (iteration 18)
+# test  4 PASSED (iteration 18)
+# test  5 PASSED (iteration 18)
+# test  6 PASSED (iteration 18)
+# test  7 PASSED (iteration 18)
+# test  8 PASSED (iteration 18)
+# test  9 PASSED (iteration 18)
+# test 10 PASSED (iteration 18)
+# test 11 PASSED (iteration 18)
+# test 12 PASSED (iteration 18)
+# test 13 PASSED (iteration 18)
+# test 14 PASSED (iteration 18)
+# test 15 PASSED (iteration 18)
+# test 16 PASSED (iteration 18)
+# test 17 PASSED (iteration 18)
+# test 18 PASSED (iteration 18)
+# test 19 PASSED (iteration 18)
+# test  0 PASSED (iteration 19)
+# test  1 PASSED (iteration 19)
+# test  2 PASSED (iteration 19)
+# test  3 PASSED (iteration 19)
+# test  4 PASSED (iteration 19)
+# test  5 PASSED (iteration 19)
+# test  6 PASSED (iteration 19)
+# test  7 PASSED (iteration 19)
+# test  8 PASSED (iteration 19)
+# test  9 PASSED (iteration 19)
+# test 10 PASSED (iteration 19)
+# test 11 PASSED (iteration 19)
+# test 12 PASSED (iteration 19)
+# test 13 PASSED (iteration 19)
+# test 14 PASSED (iteration 19)
+# test 15 PASSED (iteration 19)
+# test 16 PASSED (iteration 19)
+# test 17 PASSED (iteration 19)
+# test 18 PASSED (iteration 19)
+# test 19 PASSED (iteration 19)
+# test  0 PASSED (iteration 20)
+# test  1 PASSED (iteration 20)
+# test  2 PASSED (iteration 20)
+# test  3 PASSED (iteration 20)
+# test  4 PASSED (iteration 20)
+# test  5 PASSED (iteration 20)
+# test  6 PASSED (iteration 20)
+# test  7 PASSED (iteration 20)
+# test  8 PASSED (iteration 20)
+# test  9 PASSED (iteration 20)
+# test 10 PASSED (iteration 20)
+# test 11 PASSED (iteration 20)
+# test 12 PASSED (iteration 20)
+# test 13 PASSED (iteration 20)
+# test 14 PASSED (iteration 20)
+# test 15 PASSED (iteration 20)
+# test 16 PASSED (iteration 20)
+# test 17 PASSED (iteration 20)
+# test 18 PASSED (iteration 20)
+# test 19 PASSED (iteration 20)
+# test  0 PASSED (iteration 21)
+# test  1 PASSED (iteration 21)
+# test  2 PASSED (iteration 21)
+# test  3 PASSED (iteration 21)
+# test  4 PASSED (iteration 21)
+# test  5 PASSED (iteration 21)
+# test  6 PASSED (iteration 21)
+# test  7 PASSED (iteration 21)
+# test  8 PASSED (iteration 21)
+# test  9 PASSED (iteration 21)
+# test 10 PASSED (iteration 21)
+# test 11 PASSED (iteration 21)
+# test 12 PASSED (iteration 21)
+# test 13 PASSED (iteration 21)
+# subpage_perm: Function not implemented
+# test 14 PASSED (iteration 21)
+# test 15 PASSED (iteration 21)
+# test 16 PASSED (iteration 21)
+# test 17 PASSED (iteration 21)
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# subpage_perm: Function not implemented
+# test 14 PASSED (iteration 21)
+# test 15 PASSED (iteration 21)
+# test 16 PASSED (iteration 21)
+# test 17 PASSED (iteration 21)
+# test 18 PASSED (iteration 21)
+# test 19 PASSED (iteration 21)
+# test  0 PASSED (iteration 22)
+# test  1 PASSED (iteration 22)
+# test  2 PASSED (iteration 22)
+# test  3 PASSED (iteration 22)
+# test  4 PASSED (iteration 22)
+# test  5 PASSED (iteration 22)
+# test  6 PASSED (iteration 22)
+# test  7 PASSED (iteration 22)
+# test  8 PASSED (iteration 22)
+# test  9 PASSED (iteration 22)
+# test 10 PASSED (iteration 22)
+# test 11 PASSED (iteration 22)
+# test 12 PASSED (iteration 22)
+# test 13 PASSED (iteration 22)
+# test 14 PASSED (iteration 22)
+# test 15 PASSED (iteration 22)
+# test 16 PASSED (iteration 22)
+# test 17 PASSED (iteration 22)
+# subpage_perm: Function not implemented
+# test 14 PASSED (iteration 21)
+# test 15 PASSED (iteration 21)
+# test 16 PASSED (iteration 21)
+# test 17 PASSED (iteration 21)
+# test 18 PASSED (iteration 21)
+# test 19 PASSED (iteration 21)
+# test  0 PASSED (iteration 22)
+# test  1 PASSED (iteration 22)
+# test  2 PASSED (iteration 22)
+# test  3 PASSED (iteration 22)
+# test  4 PASSED (iteration 22)
+# test  5 PASSED (iteration 22)
+# test  6 PASSED (iteration 22)
+# test  7 PASSED (iteration 22)
+# test  8 PASSED (iteration 22)
+# test  9 PASSED (iteration 22)
+# test 10 PASSED (iteration 22)
+# test 11 PASSED (iteration 22)
+# test 12 PASSED (iteration 22)
+# test 13 PASSED (iteration 22)
+# test 14 PASSED (iteration 22)
+# test 15 PASSED (iteration 22)
+# test 16 PASSED (iteration 22)
+# test 17 PASSED (iteration 22)
+# test 18 PASSED (iteration 22)
+# test 19 PASSED (iteration 22)
+# done (all tests OK)
+ok 34 selftests: mm: protection_keys
+# timeout set to 45
+# selftests: mm: va_high_addr_switch
+# mmap(ADDR_SWITCH_HINT - PAGE_SIZE, PAGE_SIZE): 0x3fffa8382000 - OK
+# mmap(ADDR_SWITCH_HINT - PAGE_SIZE, (2 * PAGE_SIZE)): 0x3fffa8372000 - OK
+# mmap(ADDR_SWITCH_HINT, PAGE_SIZE): 0x3fffa8382000 - OK
+# mmap(ADDR_SWITCH_HINT, 2 * PAGE_SIZE, MAP_FIXED): 0xffffffffffffffff - FAILED
+# mmap(NULL): 0x3fffa8362000 - OK
+# mmap(LOW_ADDR): 0x40000000 - OK
+# mmap(HIGH_ADDR): 0x3fffa8362000 - OK
+# mmap(HIGH_ADDR) again: 0x3fffa8342000 - OK
+# mmap(HIGH_ADDR, MAP_FIXED): 0xffffffffffffffff - FAILED
+# mmap(-1): 0x3fffa8322000 - OK
+# mmap(-1) again: 0x3fffa8302000 - OK
+# mmap(ADDR_SWITCH_HINT - PAGE_SIZE, PAGE_SIZE): 0x3fffa8312000 - OK
+# mmap(ADDR_SWITCH_HINT - PAGE_SIZE, 2 * PAGE_SIZE): 0x3fffa8302000 - OK
+# mmap(ADDR_SWITCH_HINT - PAGE_SIZE/2 , 2 * PAGE_SIZE): 0x3fffa82e2000 - OK
+# mmap(ADDR_SWITCH_HINT, PAGE_SIZE): 0x3fffa82d2000 - OK
+# mmap(ADDR_SWITCH_HINT, 2 * PAGE_SIZE, MAP_FIXED): 0xffffffffffffffff - FAILED
+not ok 35 selftests: mm: va_high_addr_switch # exit=1
+# timeout set to 45
+# selftests: mm: virtual_address_range
+ok 36 selftests: mm: virtual_address_range
+# timeout set to 45
+# selftests: mm: write_to_hugetlbfs
+# path not found: Invalid argument
+# Usage: ./write_to_hugetlbfs -p <path to hugetlbfs file> -s <size to map> [-m <0=hugetlbfs | 1=mmap(MAP_HUGETLB)>] [-l] [-r] [-o] [-w] [-n]
+not ok 37 selftests: mm: write_to_hugetlbfs # exit=1
+# timeout set to 45
+# selftests: mm: run_vmtests.sh
+# Warning: file run_vmtests.sh is not executable
+# -----------------------
+# running ./hugepage-mmap
+# -----------------------
+# Returned address is 0x3efff0000000
+# First hex is 0
+# First hex is 3020100
+# [PASS]
+# ----------------------
+# running ./hugepage-shm
+# ----------------------
+# shmid: 0x2
+# shmaddr: 0x3efff0000000
+# Starting the writes:
+# ................................................................................................................................................................................................................................................................
+# Starting the Check...Done.
+# [PASS]
+# ---------------------
+# running ./map_hugetlb
+# ---------------------
+# Default size hugepages
+# Mapping 256 Mbytes
+# Returned address is 0x3efff0000000
+# First hex is 0
+# First hex is 3020100
+# [PASS]
+# -------------------------
+# running ./hugepage-mremap
+# -------------------------
+# userfaultfd: Function not implemented
+# Map haddr: Returned address is 0x3effff000000
+# Map daddr: Returned address is 0x3efffe000000
+# Map vaddr: Returned address is 0x3fffafe00000
+# [FAIL]
+# --------------------------
+# running ./hugepage-vmemmap
+# --------------------------
+# munmap: Invalid argument
+# Returned address is 0x3effff000000 whose pfn is 392000
+# [FAIL]
+# -------------------------
+# running ./hugetlb-madvise
+# -------------------------
+# [PASS]
+# NOTE: These hugetlb tests provide minimal coverage.  Use
+#       https://github.com/libhugetlbfs/libhugetlbfs.git for
+#       hugetlb regression testing.
+# -----------------------------
+# running ./map_fixed_noreplace
+# -----------------------------
+# mmap() @ 0x3fff812db000-0x3fff812e0000 p=0x3fff812db000 result=Success
+# unmap() successful
+# mmap() @ 0x3fff812dc000-0x3fff812df000 p=0x3fff812dc000 result=Success
+# mmap() @ 0x3fff812db000-0x3fff812e0000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fff812dd000-0x3fff812de000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fff812de000-0x3fff812e0000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fff812db000-0x3fff812dd000 p=0xffffffffffffffff result=File exists
+# mmap() @ 0x3fff812db000-0x3fff812dc000 p=0x3fff812db000 result=Success
+# mmap() @ 0x3fff812df000-0x3fff812e0000 p=0x3fff812df000 result=Success
+# unmap() successful
+# OK
+# [PASS]
+# ---------------------
+# running ./gup_test -u
+# ---------------------
+# GUP_FAST_BENCHMARK: Time: get:5503 put:1760 us
+# [PASS]
+# ---------------------
+# running ./gup_test -a
+# ---------------------
+# PIN_FAST_BENCHMARK: Time: get:6937 put:1923 us
+# [PASS]
+# -----------------------------------------
+# running ./gup_test -ct -F 0x1 0 19 0x1000
+# -----------------------------------------
+# DUMP_USER_PAGES_TEST: done
+# [PASS]
+# ----------------------
+# running ./gup_longterm
+# ----------------------
+# # [INFO] detected hugetlb page size: 16777216 KiB
+# # [INFO] detected hugetlb page size: 16384 KiB
+# TAP version 13
+# 1..40
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with memfd
+# ok 1 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with tmpfile
+# ok 2 Should have failed
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 3 Should have failed
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 4 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 5 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd
+# ok 6 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with tmpfile
+# ok 7 Should have failed
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 8 Should have failed
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 9 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 10 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with memfd
+# ok 11 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with tmpfile
+# ok 12 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 13 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 14 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 15 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd
+# ok 16 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with tmpfile
+# ok 17 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with local tmpfile
+# ok 18 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16777216 kB)
+# ok 19 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP-fast pin in MAP_SHARED file mapping ... with memfd hugetlb (16384 kB)
+# ok 20 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with memfd
+# ok 21 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 22 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 23 Should have worked
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 24 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 25 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd
+# ok 26 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 27 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 28 Should have worked
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 29 # SKIP need more free huge pages
+# # [RUN] R/W longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 30 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with memfd
+# ok 31 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 32 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 33 Should have worked
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 34 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 35 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd
+# ok 36 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with tmpfile
+# ok 37 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with local tmpfile
+# ok 38 Should have worked
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16777216 kB)
+# ok 39 # SKIP need more free huge pages
+# # [RUN] R/O longterm GUP-fast pin in MAP_PRIVATE file mapping ... with memfd hugetlb (16384 kB)
+# ok 40 Should have worked
+# # Totals: pass:32 fail:0 xfail:0 xpass:0 skip:8 error:0
+# [PASS]
+# -------------------------
+# running ./uffd-unit-tests
+# -------------------------
+# Testing UFFDIO_API (with syscall)... skipped [reason: cannot open userfaultfd handle]
+# Testing UFFDIO_API (with /dev/userfaultfd)... skipped [reason: cannot open userfaultfd handle]
+# Userfaultfd not supported or unprivileged, skip all tests
+# [SKIP]
+# --------------------------------
+# running ./uffd-stress anon 20 16
+# --------------------------------
+# ERROR: Userfaultfd open failed (errno=2, @uffd-stress.c:410)
+# [FAIL]
+# ------------------------------------
+# running ./uffd-stress hugetlb 256 32
+# ------------------------------------
+# ERROR: Userfaultfd open failed (errno=2, @uffd-stress.c:410)
+# [FAIL]
+# --------------------------------------------
+# running ./uffd-stress hugetlb-private 256 32
+# --------------------------------------------
+# ERROR: Userfaultfd open failed (errno=2, @uffd-stress.c:410)
+# [FAIL]
+# ---------------------------------
+# running ./uffd-stress shmem 20 16
+# ---------------------------------
+# ERROR: Userfaultfd open failed (errno=2, @uffd-stress.c:410)
+# [FAIL]
+# -----------------------------------------
+# running ./uffd-stress shmem-private 20 16
+# -----------------------------------------
+# ERROR: Userfaultfd open failed (errno=2, @uffd-stress.c:410)
+# [FAIL]
+# -------------------------
+# running ./compaction_test
+# -------------------------
+# No of huge pages allocated = 2387
+#
+not ok 38 selftests: mm: run_vmtests.sh # TIMEOUT 45 seconds
+make[1]: Leaving directory '/root/test_jay/linux/tools/testing/selftests/mm'

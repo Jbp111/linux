@@ -1,0 +1,101 @@
+From git@z Thu Jan  1 00:00:00 1970
+Subject: [PATCH] powerpc/mm/book3s64/hash/4k: Add pmd_same callback for 4K page size
+From: Aneesh Kumar K.V <aneesh.kumar@linux.ibm.com>
+Date: Thu, 06 Jul 2023 07:54:05 +0530
+Message-Id: <20230706022405.798157-1-aneesh.kumar@linux.ibm.com>
+To: linuxppc-dev@lists.ozlabs.org, mpe@ellerman.id.au, npiggin@gmail.com, christophe.leroy@csgroup.eu
+Cc: "Aneesh Kumar K.V" <aneesh.kumar@linux.ibm.com>, Hugh Dickins <hughd@google.com>
+List-Id: Linux on PowerPC Developers Mail List <linuxppc-dev.lists.ozlabs.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+With commit 0d940a9b270b ("mm/pgtable: allow pte_offset_map[_lock]() to
+fail") the kernel is now using pmd_same to compare pmd values that are
+pointing to a level 4 page table page. Move the functions out of #ifdef
+CONFIG_TRANSPARENT_HUGEPAGE and add a variant that can work with both 4K
+and 64K page size.
+
+kernel BUG at arch/powerpc/include/asm/book3s/64/hash-4k.h:141!
+Oops: Exception in kernel mode, sig: 5 [#1]
+LE PAGE_SIZE=4K MMU=Hash SMP NR_CPUS=2048 NUMA pSeries
+.....
+NIP [c00000000048aee0] __pte_offset_map_lock+0xf0/0x164
+LR [c00000000048ae78] __pte_offset_map_lock+0x88/0x164
+Call Trace:
+ 0xc0003f000009a340 (unreliable)
+ __handle_mm_fault+0x1340/0x1980
+ handle_mm_fault+0xbc/0x380
+ __get_user_pages+0x320/0x550
+ get_user_pages_remote+0x13c/0x520
+ get_arg_page+0x80/0x1d0
+ copy_string_kernel+0xc8/0x250
+ kernel_execve+0x11c/0x270
+ run_init_process+0xe4/0x10c
+ kernel_init+0xbc/0x1a0
+ ret_from_kernel_user_thread+0x14/0x1c
+
+Cc: Hugh Dickins <hughd@google.com>
+Reported-by: Michael Ellerman <mpe@ellerman.id.au>
+Signed-off-by: Aneesh Kumar K.V <aneesh.kumar@linux.ibm.com>
+Acked-by: Hugh Dickins <hughd@google.com>
+---
+ arch/powerpc/include/asm/book3s/64/hash-4k.h  | 6 ------
+ arch/powerpc/include/asm/book3s/64/hash-64k.h | 5 -----
+ arch/powerpc/include/asm/book3s/64/hash.h     | 5 +++++
+ 3 files changed, 5 insertions(+), 11 deletions(-)
+
+diff --git a/arch/powerpc/include/asm/book3s/64/hash-4k.h b/arch/powerpc/include/asm/book3s/64/hash-4k.h
+index b6ac4f86c87b..6472b08fa1b0 100644
+--- a/arch/powerpc/include/asm/book3s/64/hash-4k.h
++++ b/arch/powerpc/include/asm/book3s/64/hash-4k.h
+@@ -136,12 +136,6 @@ static inline int hash__pmd_trans_huge(pmd_t pmd)
+ 	return 0;
+ }
+ 
+-static inline int hash__pmd_same(pmd_t pmd_a, pmd_t pmd_b)
+-{
+-	BUG();
+-	return 0;
+-}
+-
+ static inline pmd_t hash__pmd_mkhuge(pmd_t pmd)
+ {
+ 	BUG();
+diff --git a/arch/powerpc/include/asm/book3s/64/hash-64k.h b/arch/powerpc/include/asm/book3s/64/hash-64k.h
+index 338e62fbea0b..0bf6fd0bf42a 100644
+--- a/arch/powerpc/include/asm/book3s/64/hash-64k.h
++++ b/arch/powerpc/include/asm/book3s/64/hash-64k.h
+@@ -263,11 +263,6 @@ static inline int hash__pmd_trans_huge(pmd_t pmd)
+ 		  (_PAGE_PTE | H_PAGE_THP_HUGE));
+ }
+ 
+-static inline int hash__pmd_same(pmd_t pmd_a, pmd_t pmd_b)
+-{
+-	return (((pmd_raw(pmd_a) ^ pmd_raw(pmd_b)) & ~cpu_to_be64(_PAGE_HPTEFLAGS)) == 0);
+-}
+-
+ static inline pmd_t hash__pmd_mkhuge(pmd_t pmd)
+ {
+ 	return __pmd(pmd_val(pmd) | (_PAGE_PTE | H_PAGE_THP_HUGE));
+diff --git a/arch/powerpc/include/asm/book3s/64/hash.h b/arch/powerpc/include/asm/book3s/64/hash.h
+index 17e7a778c856..d4a19e6547ac 100644
+--- a/arch/powerpc/include/asm/book3s/64/hash.h
++++ b/arch/powerpc/include/asm/book3s/64/hash.h
+@@ -132,6 +132,11 @@ static inline int get_region_id(unsigned long ea)
+ 	return region_id;
+ }
+ 
++static inline int hash__pmd_same(pmd_t pmd_a, pmd_t pmd_b)
++{
++	return (((pmd_raw(pmd_a) ^ pmd_raw(pmd_b)) & ~cpu_to_be64(_PAGE_HPTEFLAGS)) == 0);
++}
++
+ #define	hash__pmd_bad(pmd)		(pmd_val(pmd) & H_PMD_BAD_BITS)
+ #define	hash__pud_bad(pud)		(pud_val(pud) & H_PUD_BAD_BITS)
+ static inline int hash__p4d_bad(p4d_t p4d)
+
+-- 
+2.41.0
+
+

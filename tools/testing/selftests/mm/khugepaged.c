@@ -333,7 +333,7 @@ static void write_settings(struct settings *settings)
 			khugepaged->scan_sleep_millisecs);
 	write_num("khugepaged/max_ptes_none", khugepaged->max_ptes_none);
 	write_num("khugepaged/max_ptes_swap", khugepaged->max_ptes_swap);
-	write_num("khugepaged/max_ptes_shared", khugepaged->max_ptes_shared);
+//	write_num("khugepaged/max_ptes_shared", khugepaged->max_ptes_shared);
 	write_num("khugepaged/pages_to_scan", khugepaged->pages_to_scan);
 
 	if (file_ops && finfo.type == VMA_FILE)
