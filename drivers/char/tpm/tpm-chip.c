@@ -28,8 +28,13 @@
 DEFINE_IDR(dev_nums_idr);
 static DEFINE_MUTEX(idr_lock);
 
-struct class *tpm_class;
-struct class *tpmrm_class;
+const struct class tpm_class = {
+	.name = "tpm",
+	.shutdown_pre = tpm_class_shutdown,
+};
+const struct class tpmrm_class = {
+	.name = "tmprm",
+};
 dev_t tpm_devt;
 
 static int tpm_request_locality(struct tpm_chip *chip)
@@ -336,7 +341,7 @@ struct tpm_chip *tpm_chip_alloc(struct device *pdev,
 
 	device_initialize(&chip->dev);
 
-	chip->dev.class = tpm_class;
+	chip->dev.class = &tpm_class;
 	chip->dev.release = tpm_dev_release;
 	chip->dev.parent = pdev;
 	chip->dev.groups = chip->groups;
@@ -521,10 +526,20 @@ static int tpm_hwrng_read(struct hwrng *rng, void *data, size_t max, bool wait)
 	return tpm_get_random(chip, data, max);
 }
 
+static bool tpm_is_hwrng_enabled(struct tpm_chip *chip)
+{
+	if (!IS_ENABLED(CONFIG_HW_RANDOM_TPM))
+		return false;
+	if (tpm_is_firmware_upgrade(chip))
+		return false;
+	if (chip->flags & TPM_CHIP_FLAG_HWRNG_DISABLED)
+		return false;
+	return true;
+}
+
 static int tpm_add_hwrng(struct tpm_chip *chip)
 {
-	if (!IS_ENABLED(CONFIG_HW_RANDOM_TPM) || tpm_is_firmware_upgrade(chip) ||
-	    chip->flags & TPM_CHIP_FLAG_HWRNG_DISABLED)
+	if (!tpm_is_hwrng_enabled(chip))
 		return 0;
 
 	snprintf(chip->hwrng_name, sizeof(chip->hwrng_name),
@@ -629,7 +644,7 @@ int tpm_chip_register(struct tpm_chip *chip)
 	return 0;
 
 out_hwrng:
-	if (IS_ENABLED(CONFIG_HW_RANDOM_TPM) && !tpm_is_firmware_upgrade(chip))
+	if (tpm_is_hwrng_enabled(chip))
 		hwrng_unregister(&chip->hwrng);
 out_ppi:
 	tpm_bios_log_teardown(chip);
@@ -654,8 +669,7 @@ EXPORT_SYMBOL_GPL(tpm_chip_register);
 void tpm_chip_unregister(struct tpm_chip *chip)
 {
 	tpm_del_legacy_sysfs(chip);
-	if (IS_ENABLED(CONFIG_HW_RANDOM_TPM) && !tpm_is_firmware_upgrade(chip) &&
-	    !(chip->flags & TPM_CHIP_FLAG_HWRNG_DISABLED))
+	if (tpm_is_hwrng_enabled(chip))
 		hwrng_unregister(&chip->hwrng);
 	tpm_bios_log_teardown(chip);
 	if (chip->flags & TPM_CHIP_FLAG_TPM2 && !tpm_is_firmware_upgrade(chip))
