@@ -122,8 +122,13 @@ static __always_inline void __tlbie_pid(unsigned long pid, unsigned long ric)
 	prs = 1; /* process scoped */
 	r = 1;   /* radix format */
 
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	else	
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+
 	trace_tlbie(0, 0, rb, rs, ric, prs, r);
 }
 
@@ -136,8 +141,13 @@ static __always_inline void __tlbie_lpid(unsigned long lpid, unsigned long ric)
 	prs = 0; /* partition scoped */
 	r = 1;   /* radix format */
 
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	else 
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+
 	trace_tlbie(lpid, 0, rb, rs, ric, prs, r);
 }
 
@@ -150,8 +160,13 @@ static __always_inline void __tlbie_lpid_guest(unsigned long lpid, unsigned long
 	prs = 1; /* process scoped */
 	r = 1;   /* radix format */
 
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	else
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+
 	trace_tlbie(lpid, 0, rb, rs, ric, prs, r);
 }
 
@@ -182,8 +197,13 @@ static __always_inline void __tlbie_va(unsigned long va, unsigned long pid,
 	prs = 1; /* process scoped */
 	r = 1;   /* radix format */
 
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	else 
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	
 	trace_tlbie(0, 0, rb, rs, ric, prs, r);
 }
 
@@ -198,8 +218,13 @@ static __always_inline void __tlbie_lpid_va(unsigned long va, unsigned long lpid
 	prs = 0; /* partition scoped */
 	r = 1;   /* radix format */
 
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	else
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	
 	trace_tlbie(lpid, 0, rb, rs, ric, prs, r);
 }
 
@@ -1395,13 +1420,22 @@ void radix__flush_tlb_all(void)
 	/*
 	 * now flush guest entries by passing PRS = 1 and LPID != 0
 	 */
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(1), "i"(ric), "r"(rs) : "memory");
+	else
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(1), "i"(ric), "r"(rs) : "memory");
 	/*
 	 * now flush host entires by passing PRS = 0 and LPID == 0
 	 */
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(0) : "memory");
+	else
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(0) : "memory");
+	
 	asm volatile("eieio; tlbsync; ptesync": : :"memory");
 }
 
@@ -1417,8 +1451,13 @@ static __always_inline void __tlbie_pid_lpid(unsigned long pid,
 	prs = 1; /* process scoped */
 	r = 1;   /* radix format */
 
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	else
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	
 	trace_tlbie(0, 0, rb, rs, ric, prs, r);
 }
 
@@ -1434,8 +1473,13 @@ static __always_inline void __tlbie_va_lpid(unsigned long va, unsigned long pid,
 	prs = 1; /* process scoped */
 	r = 1;   /* radix format */
 
-	asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+	if (atomic_read(&mm->context.copros) > 0)
+		asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
 		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	else
+		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+		     : : "r"(rb), "i"(r), "i"(prs), "i"(ric), "r"(rs) : "memory");
+	
 	trace_tlbie(0, 0, rb, rs, ric, prs, r);
 }
 

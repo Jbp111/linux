@@ -6,6 +6,7 @@
  *    Copyright (C) 2001 Anton Blanchard <anton@au.ibm.com>, IBM
  */
 
+#include "linux/ethtool.h"
 #undef DEBUG_LOW
 
 #include <linux/spinlock.h>
@@ -142,7 +143,13 @@ static inline void fixup_tlbie_vpn(unsigned long vpn, int psize,
 		 * re-order the tlbie
 		 */
 		asm volatile("ptesync": : :"memory");
-		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+
+		if (atomic_read(&mm->context.copros) > 0)
+			asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
+			     : : "r"(rb), "i"(r), "i"(prs),
+			       "i"(ric), "r"(rs) : "memory");
+		else
+			asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
 			     : : "r"(rb), "i"(r), "i"(prs),
 			       "i"(ric), "r"(rs) : "memory");
 	}

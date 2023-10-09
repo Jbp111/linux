@@ -4,6 +4,7 @@
  * Copyright 2010-2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
+#include "linux/ethtool.h"
 #include <linux/types.h>
 #include <linux/string.h>
 #include <linux/kvm.h>
@@ -439,14 +440,25 @@ static inline void fixup_tlbie_lpid(unsigned long rb_value, unsigned long lpid)
 		 * re-order the tlbie
 		 */
 		asm volatile("ptesync": : :"memory");
-		asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
+
+		if (atomic_read(&mm->context.copros) > 0)
+			asm volatile(PPC_TLBIETP(%0, %4, %3, %2, %1)
+			     : : "r"(rb), "i"(r), "i"(prs),
+			       "i"(ric), "r"(rs) : "memory");
+		else
+			asm volatile(PPC_TLBIE_5(%0, %4, %3, %2, %1)
 			     : : "r"(rb), "i"(r), "i"(prs),
 			       "i"(ric), "r"(rs) : "memory");
 	}
 
 	if (cpu_has_feature(CPU_FTR_P9_TLBIE_STQ_BUG)) {
 		asm volatile("ptesync": : :"memory");
-		asm volatile(PPC_TLBIE_5(%0,%1,0,0,0) : :
+
+		if (atomic_read(&mm->context.copros) > 0)
+			asm volatile(PPC_TLBIETP(%0,%1,0,0,0) : :
+			     "r" (rb_value), "r" (lpid));
+		else 
+			asm volatile(PPC_TLBIE_5(%0,%1,0,0,0) : :
 			     "r" (rb_value), "r" (lpid));
 	}
 }
@@ -465,7 +477,12 @@ static void do_tlbies(struct kvm *kvm, unsigned long *rbvalues,
 		if (need_sync)
 			asm volatile("ptesync" : : : "memory");
 		for (i = 0; i < npages; ++i) {
-			asm volatile(PPC_TLBIE_5(%0,%1,0,0,0) : :
+
+			if (atomic_read(&mm->context.copros) > 0)
+				asm volatile(PPC_TLBIETP(%0,%1,0,0,0) : :
+				     "r" (rbvalues[i]), "r" (kvm->arch.lpid));
+			else
+				asm volatile(PPC_TLBIE_5(%0,%1,0,0,0) : :
 				     "r" (rbvalues[i]), "r" (kvm->arch.lpid));
 		}
 
