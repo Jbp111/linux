@@ -5,6 +5,7 @@
  * Copyright 2015-2016, Aneesh Kumar K.V, IBM Corporation.
  */
 
+#include "linux/kern_levels.h"
 #include <linux/mm.h>
 #include <linux/hugetlb.h>
 #include <linux/memblock.h>
@@ -938,6 +939,9 @@ void radix__flush_tlb_mm(struct mm_struct *mm)
 	 */
 	smp_mb();
 	type = flush_type_needed(mm, false);
+
+	printk(KERN_INFO "JAY HELLO in TLB_MM API type == %d\n",type);
+
 	if (type == FLUSH_TYPE_LOCAL) {
 		_tlbiel_pid(pid, RIC_FLUSH_TLB);
 	} else if (type == FLUSH_TYPE_GLOBAL) {
@@ -953,9 +957,15 @@ void radix__flush_tlb_mm(struct mm_struct *mm)
 				_tlbie_pid(pid, RIC_FLUSH_ALL);
 			else{
 				if (atomic_read(&mm->context.copros) > 0)
+				{
 					_tlbie_pid(pid, RIC_FLUSH_TLB);
+					printk(KERN_EMERG "JAY TLBIE HIT\n");
+				}
 				else
+				{
 					_tlbiep_pid(pid, RIC_FLUSH_TLB);
+					printk(KERN_EMERG "JAY TLBIEP HIT\n");
+				}
 			}
 		} else {
 			_tlbiel_pid_multicast(mm, pid, RIC_FLUSH_TLB);
