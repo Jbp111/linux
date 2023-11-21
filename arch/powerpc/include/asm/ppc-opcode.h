@@ -407,7 +407,7 @@
 #define PPC_RAW_TLBIEL(rb, rs, ric, prs, r) \
 	(0x7c000224 | ___PPC_RB(rb) | ___PPC_RS(rs) | ___PPC_RIC(ric) | ___PPC_PRS(prs) | ___PPC_R(r))
 #define PPC_RAW_TLBIEP(rb, rs, ric, prs, r) \
-	(0x7c000032 | ___PPC_RB(rb) | ___PPC_RS(rs) | ___PPC_RIC(ric) | ___PPC_PRS(prs) | ___PPC_R(r))
+	(0x7c000264 | ___PPC_RB(rb) | ___PPC_RS(rs) | ___PPC_RIC(ric) | ___PPC_PRS(prs) | ___PPC_R(r))
 #define PPC_RAW_TLBIEL_v205(rb, l)	(0x7c000224 | ___PPC_RB(rb) | (l << 21))
 #define PPC_RAW_TLBSRX_DOT(a, b)	(0x7c0006a5 | __PPC_RA0(a) | __PPC_RB(b))
 #define PPC_RAW_TLBIVAX(a, b)		(0x7c000624 | __PPC_RA0(a) | __PPC_RB(b))

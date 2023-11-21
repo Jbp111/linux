@@ -959,12 +959,12 @@ void radix__flush_tlb_mm(struct mm_struct *mm)
 				if (atomic_read(&mm->context.copros) > 0)
 				{
 					_tlbie_pid(pid, RIC_FLUSH_TLB);
-					printk(KERN_EMERG "JAY TLBIE HIT\n");
+					printk(KERN_INFO "JAY TLBIE HIT\n");
 				}
 				else
 				{
 					_tlbiep_pid(pid, RIC_FLUSH_TLB);
-					printk(KERN_EMERG "JAY TLBIEP HIT\n");
+					printk(KERN_INFO "JAY TLBIEP HIT\n");
 				}
 			}
 		} else {
@@ -988,6 +988,7 @@ static void __flush_all_mm(struct mm_struct *mm, bool fullmm)
 	preempt_disable();
 	smp_mb(); /* see radix__flush_tlb_mm */
 	type = flush_type_needed(mm, fullmm);
+	printk(KERN_INFO "JAY1 type == %d fullmm == %d\n", type, fullmm);
 	if (type == FLUSH_TYPE_LOCAL) {
 		_tlbiel_pid(pid, RIC_FLUSH_ALL);
 	} else if (type == FLUSH_TYPE_GLOBAL) {
@@ -1002,9 +1003,15 @@ static void __flush_all_mm(struct mm_struct *mm, bool fullmm)
 					       H_RPTI_PAGE_ALL, 0, -1UL);
 		} else if (cputlb_use_tlbie())
 			if (atomic_read(&mm->context.copros) > 0)
+			{
+				printk(KERN_INFO "JAY No Tlbie");
 				_tlbie_pid(pid, RIC_FLUSH_ALL);
+			}
 			else
+			{
+				printk(KERN_INFO "JAY Yes Tlbiep");
 				_tlbiep_pid(pid, RIC_FLUSH_ALL);
+			}
 		else
 			_tlbiel_pid_multicast(mm, pid, RIC_FLUSH_ALL);
 	}
@@ -1309,6 +1316,7 @@ void radix__tlb_flush(struct mmu_gather *tlb)
 	 * that flushes the process table entry cache upon process teardown.
 	 * See the comment for radix in arch_exit_mmap().
 	 */
+	 printk (KERN_INFO "JAY fullmm == %d\n",tlb->fullmm);
 	if (tlb->fullmm) {
 		if (IS_ENABLED(CONFIG_MMU_LAZY_TLB_SHOOTDOWN)) {
 			/*
